@@ -1,0 +1,2484 @@
+
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+   <head>
+      <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+      <meta name="description" content="Portfolio of Shivangi Narayan, AI and Software Engineer specializing in Computer Vision, NLP, and Full-Stack Development with expertise in Python, Java, and Machine Learning.">
+      <meta name="theme-color" content="#ffffff">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="robots" content="">
+
+      
+      
+
+
+      <title>Shivangi Narayan | AI & Software Engineer Portfolio</title>
+      <!-- SEO Description -->
+      <meta name="description" content="Portfolio of Shivangi Narayan, AI and Software Engineer specializing in Computer Vision, NLP, and Backend Development with expertise in Python, Cybersecurity, and Machine Learning.">
+
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <!-- Performance optimization: Preload critical resources -->
+      <link rel="preload" href="https://cdn.tailwindcss.com" as="script">
+      
+      <!-- Header Scripts -->
+      <script id="header-scripts">
+        // This script tag will be replaced with actual scripts.head content
+        if (window.scripts && window.scripts.head) {
+          document.getElementById('header-scripts').outerHTML = window.scripts.head;
+        }
+      </script>
+
+      <!-- Preconnect -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+      <!-- Font stylesheet -->
+
+      <script type="application/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.8/handlebars.min.js"></script>
+
+      <!-- Core CSS -->
+      <script src="https://cdn.tailwindcss.com"></script>
+      <script>
+      // render the settings object
+      //console.log('settings', [object Object]);
+      document.addEventListener('DOMContentLoaded', function() {
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                primary: {
+                  DEFAULT: '#121212',
+                  50: '#f8f8f8',
+                  100: '#e8e8e8', 
+                  200: '#d3d3d3',
+                  300: '#a3a3a3',
+                  400: '#737373',
+                  500: '#525252',
+                  600: '#404040',
+                  700: '#262626',
+                  800: '#171717',
+                  900: '#0a0a0a',
+                  950: '#030303',
+                },
+                secondary: {
+                  DEFAULT: '#1e1e1e',
+                  50: '#f8f8f8',
+                  100: '#e8e8e8',
+                  200: '#d3d3d3', 
+                  300: '#a3a3a3',
+                  400: '#737373',
+                  500: '#525252',
+                  600: '#404040',
+                  700: '#262626',
+                  800: '#171717',
+                  900: '#0a0a0a',
+                  950: '#030303',
+                },
+                accent: {
+                  DEFAULT: '',
+                  50: '#f8f8f8',
+                  100: '#e8e8e8',
+                  200: '#d3d3d3',
+                  300: '#a3a3a3', 
+                  400: '#737373',
+                  500: '#525252',
+                  600: '#404040',
+                  700: '#262626',
+                  800: '#171717',
+                  900: '#0a0a0a',
+                  950: '#030303',
+                },
+              },
+              fontFamily: {
+                sans: ['JetBrains Mono, monospace', 'Inter', 'system-ui', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Helvetica Neue', 'Arial', 'sans-serif'],
+                heading: ['Poppins, sans-serif', 'Inter', 'system-ui', 'sans-serif'],
+                body: ['Poppins, sans-serif', 'Inter', 'system-ui', 'sans-serif'],
+              },
+              spacing: {
+                '18': '4.5rem',
+                '22': '5.5rem',
+                '30': '7.5rem',
+              },
+              maxWidth: {
+                '8xl': '88rem',
+                '9xl': '96rem',
+              },
+              animation: {
+                'fade-in': 'fadeIn 0.5s ease-in',
+                'fade-out': 'fadeOut 0.5s ease-out',
+                'slide-up': 'slideUp 0.5s ease-out',
+                'slide-down': 'slideDown 0.5s ease-out',
+                'slide-left': 'slideLeft 0.5s ease-out',
+                'slide-right': 'slideRight 0.5s ease-out',
+                'scale-in': 'scaleIn 0.5s ease-out',
+                'scale-out': 'scaleOut 0.5s ease-out',
+                'spin-slow': 'spin 3s linear infinite',
+                'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                'bounce-slow': 'bounce 3s infinite',
+                'float': 'float 3s ease-in-out infinite',
+              },
+              keyframes: {
+                fadeIn: {
+                  '0%': { opacity: '0' },
+                  '100%': { opacity: '1' },
+                },
+                fadeOut: {
+                  '0%': { opacity: '1' },
+                  '100%': { opacity: '0' },
+                },
+                slideUp: {
+                  '0%': { transform: 'translateY(20px)', opacity: '0' },
+                  '100%': { transform: 'translateY(0)', opacity: '1' },
+                },
+                slideDown: {
+                  '0%': { transform: 'translateY(-20px)', opacity: '0' },
+                  '100%': { transform: 'translateY(0)', opacity: '1' },
+                },
+                slideLeft: {
+                  '0%': { transform: 'translateX(20px)', opacity: '0' },
+                  '100%': { transform: 'translateX(0)', opacity: '1' },
+                },
+                slideRight: {
+                  '0%': { transform: 'translateX(-20px)', opacity: '0' },
+                  '100%': { transform: 'translateX(0)', opacity: '1' },
+                },
+                scaleIn: {
+                  '0%': { transform: 'scale(0.9)', opacity: '0' },
+                  '100%': { transform: 'scale(1)', opacity: '1' },
+                },
+                scaleOut: {
+                  '0%': { transform: 'scale(1.1)', opacity: '0' },
+                  '100%': { transform: 'scale(1)', opacity: '1' },
+                },
+                float: {
+                  '0%, 100%': { transform: 'translateY(0)' },
+                  '50%': { transform: 'translateY(-10px)' },
+                },
+              },
+              aspectRatio: {
+                'portrait': '3/4',
+                'landscape': '4/3',
+                'ultrawide': '21/9',
+              },
+            },
+          },
+          variants: {
+            extend: {
+              opacity: ['disabled'],
+              cursor: ['disabled'],
+              backgroundColor: ['active', 'disabled'],
+              textColor: ['active', 'disabled'],
+            },
+          },
+        }
+      });
+      </script>
+
+      <!-- Utilities and Components -->
+      <script defer src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/3.13.3/cdn.min.js"></script>
+      <script defer src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.45.1/apexcharts.min.js"></script>
+      
+      <!-- Optimized Font Loading -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      
+      <!-- Icons -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" 
+            integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+      <!-- Dynamic Meta Tags -->
+      <meta name="description" content="">
+      <meta name="keywords" content="">
+      <meta name="robots" content="">
+      <meta name="google-site-verification" content="">
+      <meta name="baidu-verification" content="">
+      <meta name="yandex-verification" content="">
+      <meta name="bing-verification" content="">
+      <meta property="og:title" content="">
+      <meta property="og:description" content="">
+      <meta property="og:image" content="">
+      <meta property="og:type" content="website">
+      <meta property="og:locale" content="en_US">
+      <meta property="og:site_name" content="Shivangi Narayan Portfolio">
+      <meta name="twitter:card" content="summary_large_image">
+      <meta name="twitter:title" content="">
+      <meta name="twitter:description" content="">
+      <meta name="twitter:image" content="">
+    
+      
+      <!-- Font Links -->
+     
+      <link rel="icon" type="image/x-icon" href="">
+
+      <style>
+        h1, h2, h3, h4, h5, h6 {
+          font-family: JetBrains Mono, monospace, Inter, system-ui, sans-serif;
+        }
+        body {
+          font-family: Poppins, sans-serif, Inter, system-ui, sans-serif;
+        }
+      </style>
+   </head>
+   <body class="antialiased text-gray-800 min-h-screen flex flex-col">
+      <!-- Skip to main content link for accessibility -->
+      <a href="#main-content" 
+         class="sr-only focus:not-sr-only focus:absolute focus:top-0 focus:left-0 focus:z-50 focus:p-4 focus:bg-white focus:text-black">
+         Skip to main content
+      </a>
+
+      <!-- Main content area -->
+      <main id="main-content" class="flex-1 relative h-full">
+        <div id="RolloutPageContent"><element id="634bc4dd-3ecb-4cc4-b3ed-1429b75f6383" data-section-id="634bc4dd-3ecb-4cc4-b3ed-1429b75f6383">
+
+
+<div id="root">
+  <header id="header" class="fixed w-full z-50 bg-neutral-900 bg-opacity-90 backdrop-blur-sm shadow-lg">
+    <nav class="container mx-auto px-4 py-3">
+      <div class="flex justify-between items-center">
+        <a href="#hero" class="text-xl font-bold text-cyan-400 font-mono">
+          <span class="text-white">&lt;</span>Shivangi<span class="text-white">/&gt;</span>
+        </a>
+        
+        <!-- Desktop Menu -->
+        <ul class="hidden md:flex space-x-6">
+          <!-- <li><a href="#hero" class="text-gray-300 hover:text-cyan-400 transition-colors duration-300 font-mono text-sm">Home</a></li> -->
+          <li><a href="#about" class="text-gray-300 hover:text-cyan-400 transition-colors duration-300 font-mono text-sm">About</a></li>
+          <li><a href="#skills" class="text-gray-300 hover:text-cyan-400 transition-colors duration-300 font-mono text-sm">Skills</a></li>
+          <li><a href="#experience" class="text-gray-300 hover:text-cyan-400 transition-colors duration-300 font-mono text-sm">Experience</a></li>
+          <li><a href="#projects" class="text-gray-300 hover:text-cyan-400 transition-colors duration-300 font-mono text-sm">Projects</a></li>
+          <li><a href="#research" class="text-gray-300 hover:text-cyan-400 transition-colors duration-300 font-mono text-sm">Research</a></li>
+          <li><a href="#achievements" class="text-gray-300 hover:text-cyan-400 transition-colors duration-300 font-mono text-sm">Achievements</a></li>
+          <li><a href="#education" class="text-gray-300 hover:text-cyan-400 transition-colors duration-300 font-mono text-sm">Education</a></li>
+          <!-- <li><a href="#contact" class="text-gray-300 hover:text-cyan-400 transition-colors duration-300 font-mono text-sm">Contact</a></li> -->
+        </ul>
+        
+        <!-- Mobile menu button -->
+        <button id="mobile-menu-button" class="md:hidden text-gray-300 focus:outline-none" aria-label="Toggle menu">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+      </div>
+      
+      <!-- Mobile Menu -->
+      <div id="mobile-menu" class="md:hidden hidden pt-4 pb-2 animate__animated animate__fadeIn">
+        <ul class="flex flex-col space-y-3">
+          <!-- <li><a href="#hero" class="block text-gray-300 hover:text-cyan-400 transition-colors duration-300 font-mono text-sm">Home</a></li> -->
+          <li><a href="#about" class="block text-gray-300 hover:text-cyan-400 transition-colors duration-300 font-mono text-sm">About</a></li>
+          <li><a href="#skills" class="block text-gray-300 hover:text-cyan-400 transition-colors duration-300 font-mono text-sm">Skills</a></li>
+          <li><a href="#experience" class="block text-gray-300 hover:text-cyan-400 transition-colors duration-300 font-mono text-sm">Experience</a></li>
+          <li><a href="#projects" class="block text-gray-300 hover:text-cyan-400 transition-colors duration-300 font-mono text-sm">Projects</a></li>
+          <li><a href="#research" class="block text-gray-300 hover:text-cyan-400 transition-colors duration-300 font-mono text-sm">Research</a></li>
+          <li><a href="#achievements" class="block text-gray-300 hover:text-cyan-400 transition-colors duration-300 font-mono text-sm">Achievements</a></li>
+          <li><a href="#education" class="block text-gray-300 hover:text-cyan-400 transition-colors duration-300 font-mono text-sm">Education</a></li>
+          <!-- <li><a href="#contact" class="block text-gray-300 hover:text-cyan-400 transition-colors duration-300 font-mono text-sm">Contact</a></li> -->
+        </ul>
+      </div>
+    </nav>
+  </header>
+  
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const mobileMenuButton = document.getElementById('mobile-menu-button');
+      const mobileMenu = document.getElementById('mobile-menu');
+      
+      mobileMenuButton.addEventListener('click', function() {
+        mobileMenu.classList.toggle('hidden');
+      });
+      
+      // Close mobile menu when clicking on a link
+      const mobileLinks = mobileMenu.querySelectorAll('a');
+      mobileLinks.forEach(link => {
+        link.addEventListener('click', function() {
+          mobileMenu.classList.add('hidden');
+        });
+      });
+    });
+  </script>
+</div>
+
+</element><element id="786eda91-dfd3-4367-8316-aa5abe2bd5a4" data-section-id="786eda91-dfd3-4367-8316-aa5abe2bd5a4">
+
+
+<div id="root">
+  <section id="hero" class="min-h-screen pt-20 bg-neutral-900 relative overflow-hidden">
+    <!-- Matrix-like code rain animation background -->
+    <canvas id="matrix-canvas" class="absolute inset-0 opacity-10"></canvas>
+    
+    <div class="container mx-auto px-4 py-16 flex flex-col md:flex-row items-center justify-between relative z-10">
+      <div class="w-full md:w-3/5 mb-12 md:mb-0 animate__animated animate__fadeInLeft">
+        <div class="text-gray-400 font-mono mb-2">&lt;greeting&gt;</div>
+        <h1 class="text-4xl md:text-6xl font-bold text-white mb-4 font-mono">
+          Hi, I'm <span class="text-cyan-400">Shivangi Narayan</span>
+        </h1>
+        <h2 class="text-xl md:text-2xl text-gray-300 mb-6 font-mono">
+          <span id="typed-text" class="text-cyan-400"></span>
+          <span class="cursor">|</span>
+        </h2>
+        <div class="text-gray-400 font-mono mb-6">
+          Software Engineer specializing in AI and Cybersecurity
+        </div>
+        
+        <div class="flex gap-4">
+          <!-- Social Links - Using placeholders. Update with actual links -->
+          <a href="https://www.linkedin.com/in/shivangi-narayan-srmap/" class="text-gray-400 hover:text-cyan-400 transition-colors duration-300" aria-label="LinkedIn">
+            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+            </svg>
+          </a>
+          <a href="https://github.com/shivangiphilic" class="text-gray-400 hover:text-cyan-400 transition-colors duration-300" aria-label="GitHub">
+            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd"></path>
+            </svg>
+          </a>
+          <a href="mailto:shivangi_narayan@srmap.edu.in" class="text-gray-400 hover:text-cyan-400 transition-colors duration-300" aria-label="Email">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+            </svg>
+          </a>
+        </div>
+        <div class="text-gray-400 font-mono mt-4">&lt;/greeting&gt;</div>
+      </div>
+      
+      <div class="w-full md:w-2/5 flex justify-center animate__animated animate__fadeInRight">
+        <div class="relative">
+          <!-- Terminal-like window -->
+          <div class="bg-neutral-800 rounded-lg overflow-hidden shadow-2xl border border-neutral-700 w-full max-w-md">
+            <!-- Terminal header -->
+            <div class="flex items-center bg-neutral-700 px-4 py-2">
+              <div class="flex space-x-2">
+                <div class="w-3 h-3 rounded-full bg-red-500"></div>
+                <div class="w-3 h-3 rounded-full bg-yellow-500"></div>
+                <div class="w-3 h-3 rounded-full bg-green-500"></div>
+              </div>
+              <div class="text-center flex-1 text-sm text-gray-300 font-mono">shivangi@portfolio:~</div>
+            </div>
+            
+            <!-- Terminal content -->
+            <div class="p-4 font-mono text-sm text-gray-300">
+              <div class="mb-2">
+                <span class="text-green-400">shivangi@portfolio</span>:<span class="text-blue-400">~</span>$ <span id="terminal-text"></span><span class="cursor">|</span>
+              </div>
+              <div id="terminal-output" class="text-gray-400"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Scroll down indicator -->
+    <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+      <a href="#about" aria-label="Scroll down" class="text-gray-400 hover:text-cyan-400 transition-colors duration-300">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+        </svg>
+      </a>
+    </div>
+  </section>
+
+  <script>
+    // Matrix background effect
+    document.addEventListener('DOMContentLoaded', function() {
+      const canvas = document.getElementById('matrix-canvas');
+      const ctx = canvas.getContext('2d');
+      
+      // Make canvas full screen
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+      
+      // Characters to display
+      const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789<>[]{}()/*-+?!@#$%^&*=';
+      const fontSize = 14;
+      const columns = canvas.width / fontSize;
+      
+      // Array to store the Y position of each column
+      const drops = [];
+      
+      // Initialize all drops to top of screen
+      for (let i = 0; i < columns; i++) {
+        drops[i] = 1;
+      }
+      
+      function draw() {
+        // Semi-transparent black to create fade effect
+        ctx.fillStyle = 'rgba(0, 0, 0, 0.05)';
+        ctx.fillRect(0, 0, canvas.width, canvas.height);
+        
+        ctx.fillStyle = '#0fa'; // Green text
+        ctx.font = `${fontSize}px monospace`;
+        
+        // Loop through drops
+        for (let i = 0; i < drops.length; i++) {
+          // Random character
+          const text = characters.charAt(Math.floor(Math.random() * characters.length));
+          
+          // Draw the character
+          ctx.fillText(text, i * fontSize, drops[i] * fontSize);
+          
+          // Move drops down if they're at the bottom or randomly respawn
+          if (drops[i] * fontSize > canvas.height && Math.random() > 0.975) {
+            drops[i] = 0;
+          }
+          
+          // Increment y coordinate
+          drops[i]++;
+        }
+      }
+      
+      // Resize canvas when window size changes
+      window.addEventListener('resize', function() {
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+      });
+      
+      setInterval(draw, 50);
+      
+      // Typing animation for main text
+      const typedTextElement = document.getElementById('typed-text');
+      const textPhrases = [
+        "Software Engineer",
+        "Machine Learning Enthusiast",
+        "Computer Vision Specialist",
+        "Python Developer"
+      ];
+      
+      let phraseIndex = 0;
+      let charIndex = 0;
+      let isDeleting = false;
+      let typingSpeed = 100;
+      
+      function typeText() {
+        const currentPhrase = textPhrases[phraseIndex];
+        
+        if (isDeleting) {
+          // Removing characters
+          typedTextElement.textContent = currentPhrase.substring(0, charIndex - 1);
+          charIndex--;
+          typingSpeed = 50; // Faster when deleting
+        } else {
+          // Adding characters
+          typedTextElement.textContent = currentPhrase.substring(0, charIndex + 1);
+          charIndex++;
+          typingSpeed = 100; // Normal typing speed
+        }
+        
+        // If we've completed typing the phrase
+        if (!isDeleting && charIndex === currentPhrase.length) {
+          isDeleting = true;
+          typingSpeed = 1000; // Pause at end of phrase
+        } 
+        // If we've deleted the phrase
+        else if (isDeleting && charIndex === 0) {
+          isDeleting = false;
+          phraseIndex = (phraseIndex + 1) % textPhrases.length; // Move to next phrase
+        }
+        
+        setTimeout(typeText, typingSpeed);
+      }
+      
+      // Start the typing animation
+      typeText();
+      
+      // Terminal typing effect
+      const terminalText = document.getElementById('terminal-text');
+      const terminalOutput = document.getElementById('terminal-output');
+      const commands = [
+        { cmd: "whoami", output: "Shivangi Narayan" },
+        { cmd: "ls -la skills/", output: "Python   JavaScript   Java   C++   Machine Learning   AI" },
+        { cmd: "cat about.txt", output: "AI enthusiast and Software Engineer passionate about solving real-world problems through technology." }
+      ];
+      
+      let cmdIndex = 0;
+      let terminalCharIndex = 0;
+      let currentCommand = commands[0].cmd;
+      
+      function typeTerminal() {
+        if (terminalCharIndex < currentCommand.length) {
+          terminalText.textContent = currentCommand.substring(0, terminalCharIndex + 1);
+          terminalCharIndex++;
+          setTimeout(typeTerminal, 100);
+        } else {
+          // Command completed, show output
+          setTimeout(function() {
+            terminalText.textContent = currentCommand;
+            terminalOutput.innerHTML += `<div class="mb-2">${commands[cmdIndex].output}</div>`;
+            
+            // Move to next command after a pause
+            setTimeout(function() {
+              cmdIndex++;
+              // Check if we've completed all commands
+              if (cmdIndex < commands.length) {
+                currentCommand = commands[cmdIndex].cmd;
+                terminalCharIndex = 0;
+                terminalText.textContent = "";
+                typeTerminal();
+              }
+              // Stop after all commands are executed (no more calls to typeTerminal)
+            }, 2000);
+          }, 500);
+        }
+      }
+      // Start terminal typing
+      typeTerminal();
+    });
+  </script>
+</div>
+
+</element><element id="13c89309-fe58-4528-a145-25a14651e8ff" data-section-id="13c89309-fe58-4528-a145-25a14651e8ff">
+
+
+<div id="root">
+  <section id="about" class="py-20 bg-neutral-800">
+    <div class="container mx-auto px-4">
+      <!-- Section Header -->
+      <div class="mb-12 text-center">
+        <h2 class="text-3xl md:text-4xl font-bold text-white mb-2 font-mono">
+          <span class="text-cyan-400">&lt;</span> About Me <span class="text-cyan-400">/&gt;</span>
+        </h2>
+        <div class="w-20 h-1 bg-cyan-400 mx-auto"></div>
+      </div>
+      
+      <!-- Content -->
+      <div class="flex flex-col md:flex-row items-center gap-8 md:gap-12">
+        <!-- Terminal-like about me -->
+        <div class="w-full md:w-1/2 animate__animated animate__fadeInLeft">
+          <div class="bg-neutral-900 rounded-lg p-6 shadow-lg border border-neutral-700">
+            <div class="flex items-center border-b border-neutral-700 pb-3 mb-4">
+              <div class="flex space-x-2">
+                <div class="w-3 h-3 rounded-full bg-red-500"></div>
+                <div class="w-3 h-3 rounded-full bg-yellow-500"></div>
+                <div class="w-3 h-3 rounded-full bg-green-500"></div>
+              </div>
+              <div class="ml-3 text-gray-400 font-mono text-sm">about.js</div>
+            </div>
+            
+            <div class="font-mono text-sm">
+              <div class="mb-3">
+                <span class="text-pink-400">const</span> 
+                <span class="text-cyan-300">developer</span> 
+                <span class="text-white">=</span> 
+                <span class="text-yellow-300">{</span>
+              </div>
+              
+              <div class="mb-1 pl-6">
+                <span class="text-green-300">name:</span> 
+                <span class="text-orange-300">'Shivangi Narayan'</span><span class="text-gray-400">,</span>
+              </div>
+              
+              <div class="mb-1 pl-6">
+                <span class="text-green-300">title:</span> 
+                <span class="text-orange-300">'AI & Software Engineer'</span><span class="text-gray-400">,</span>
+              </div>
+              
+              <div class="mb-1 pl-6">
+                <span class="text-green-300">education:</span> 
+                <span class="text-orange-300">'B.Tech in Computer Science'</span><span class="text-gray-400">,</span>
+              </div>
+              
+              <div class="mb-1 pl-6">
+                <span class="text-green-300">interests:</span> 
+                <span class="text-yellow-300">[</span>
+                <span class="text-orange-300">'AI'</span><span class="text-gray-400">,</span> 
+                <span class="text-orange-300">'Machine Learning'</span><span class="text-gray-400">,</span> 
+                <span class="text-orange-300">'Computer Vision'</span>
+                <span class="text-yellow-300">]</span><span class="text-gray-400">,</span>
+              </div>
+              
+              <div class="mb-1 pl-6">
+                <span class="text-green-300">skills:</span> 
+                <span class="text-yellow-300">{</span> 
+                <span class="text-gray-400">/* See Skills Section */</span> 
+                <span class="text-yellow-300">}</span><span class="text-gray-400">,</span>
+              </div>
+              
+              <div class="mb-1 pl-6">
+                <span class="text-green-300">bio:</span> 
+                <span class="text-orange-300">'Dedicated AI and Software Engineer with a passion for machine learning, computer vision, and innovative technology solutions...'</span>
+              </div>
+              
+              <div>
+                <span class="text-yellow-300">}</span><span class="text-gray-400">;</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- About Text -->
+        <div class="w-full md:w-1/2 animate__animated animate__fadeInRight">
+          <div class="text-gray-300 space-y-4">
+            <p class="leading-relaxed">
+              I'm an AI and Software Engineer with expertise in developing machine learning models and building innovative software solutions. Currently pursuing my B.Tech in Computer Science and Engineering with a minor in Mathematics at SRM University, AP, I combine strong academic foundation with practical software development skills.
+            </p>
+            
+            <p class="leading-relaxed">
+              My passion lies in applying artificial intelligence to solve real-world problems. I've worked extensively with computer vision, natural language processing, and generative AI technologies to create efficient and impactful solutions.
+            </p>
+            
+            <p class="leading-relaxed">
+              My experience includes developing AI models for classification and generation tasks, automating complex calculations through backend development, and creating algorithms that analyze user behavior patterns.
+            </p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-6">
+              <div class="flex items-center">
+                <div class="w-2 h-2 bg-cyan-400 rounded-full mr-2"></div>
+                <span>B.Tech in CS (GPA: 9.00)</span>
+              </div>
+              <div class="flex items-center">
+                <div class="w-2 h-2 bg-cyan-400 rounded-full mr-2"></div>
+                <span>Minor in Mathematics</span>
+              </div>
+              <div class="flex items-center">
+                <div class="w-2 h-2 bg-cyan-400 rounded-full mr-2"></div>
+                <span>AI Specialization</span>
+              </div>
+              <div class="flex items-center">
+                <div class="w-2 h-2 bg-cyan-400 rounded-full mr-2"></div>
+                <span>IELTS: 8 bands</span>
+              </div>
+            </div>
+            
+            <div class="flex flex-wrap gap-3 pt-4">
+              <a href="#contact" class="bg-cyan-600 hover:bg-cyan-700 text-white font-mono py-2 px-4 rounded-md transition duration-300 text-sm flex items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                </svg>
+                Get in Touch
+              </a>
+              <a href="#resume" class="border border-cyan-600 text-cyan-400 hover:bg-cyan-600 hover:text-white font-mono py-2 px-4 rounded-md transition duration-300 text-sm flex items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                </svg>
+                Resume
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+</element><element id="220859e7-f49c-4c08-848c-86f02a67a4f4" data-section-id="220859e7-f49c-4c08-848c-86f02a67a4f4">
+
+
+                
+<div id="root">
+  <section id="skills" class="py-20 bg-neutral-900">
+    <div class="container mx-auto px-4" id="el-p526s51j">
+      <!-- Section Header -->
+      <div class="mb-12 text-center" id="el-pblc8uov">
+        <h2 class="text-3xl md:text-4xl font-bold text-white mb-2 font-mono" id="el-1cq68k5g">
+          <span class="text-cyan-400" id="el-knx31lmy">&lt;</span> Technical Skills <span class="text-cyan-400" id="el-rrot5ba3">/&gt;</span>
+        </h2>
+        <div class="w-20 h-1 bg-cyan-400 mx-auto" id="el-obq89uux"></div>
+        <p class="text-gray-400 mt-4 max-w-xl mx-auto" id="el-dvqjhlm3">A comprehensive set of technical skills acquired through education, projects, and professional experience.</p>
+      </div>
+      
+      <!-- Skills Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="el-hvjm85gd">
+        
+        <!-- Programming Languages -->
+        <div class="bg-neutral-800 rounded-lg p-6 transition-transform hover:transform hover:-translate-y-2 hover:shadow-lg border border-neutral-700" id="el-w7lbw3c3">
+          <div class="flex items-center mb-4" id="el-4xl45dzx">
+            <div class="w-10 h-10 flex items-center justify-center rounded-lg bg-cyan-900/30 mr-3" id="el-2icj8e1d">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-cyan-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" id="el-o0xm7te5">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" id="el-e0g2bz4c"></path>
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold text-white font-mono" id="el-sxemuuyt">Programming Languages</h3>
+          </div>
+          
+          <div class="space-y-4" id="el-8tsh8jo3">
+            <!-- Python -->
+            <div id="el-rs1g8aes">
+              <div class="flex justify-between mb-1" id="el-el8hvhmg">
+                <span class="text-gray-300 font-mono text-sm" id="el-gh4g5jdd">Python</span>
+                <span class="text-gray-400 text-xs" id="el-0uggjbbd">95%</span>
+              </div>
+              <div class="w-full bg-neutral-700 rounded-full h-2.5" id="el-y9uv2bv1">
+                <div class="bg-cyan-400 h-2.5 rounded-full" style="width: 95%" id="el-3y3si2it"></div>
+              </div>
+            </div>
+            
+            <!-- Java -->
+            <div id="el-q5lbtik6">
+              <div class="flex justify-between mb-1" id="el-s81cnmni">
+                <span class="text-gray-300 font-mono text-sm" id="el-1f4m1565">Java</span>
+                <span class="text-gray-400 text-xs" id="el-nvbzzua5">85%</span>
+              </div>
+              <div class="w-full bg-neutral-700 rounded-full h-2.5" id="el-cwc3q6jc">
+                <div class="bg-cyan-400 h-2.5 rounded-full" style="width: 85%" id="el-atn3arnt"></div>
+              </div>
+            </div>
+            
+            <!-- JavaScript -->
+            <div id="el-k1p3n8k7">
+              <div class="flex justify-between mb-1" id="el-lssf0odq">
+                <span class="text-gray-300 font-mono text-sm" id="el-gk9xgv6v">JavaScript</span>
+                <span class="text-gray-400 text-xs" id="el-twpcp0fi">80%</span>
+              </div>
+              <div class="w-full bg-neutral-700 rounded-full h-2.5" id="el-bxt192ui">
+                <div class="bg-cyan-400 h-2.5 rounded-full" style="width: 80%" id="el-apns39iz"></div>
+              </div>
+            </div>
+            
+            <!-- C/C++ -->
+            <div id="el-shmz62u6">
+              <div class="flex justify-between mb-1" id="el-n7ptf3fs">
+                <span class="text-gray-300 font-mono text-sm" id="el-r5f92bdu">C/C++</span>
+                <span class="text-gray-400 text-xs" id="el-rg46vzeo">75%</span>
+              </div>
+              <div class="w-full bg-neutral-700 rounded-full h-2.5" id="el-67ttm1jm">
+                <div class="bg-cyan-400 h-2.5 rounded-full" style="width: 75%" id="el-1g98d3kz"></div>
+              </div>
+            </div>
+            
+            <!-- MATLAB -->
+            <div id="el-coj3f527">
+              <div class="flex justify-between mb-1" id="el-q8c054s1">
+                <span class="text-gray-300 font-mono text-sm" id="el-g372qqlp">MATLAB</span>
+                <span class="text-gray-400 text-xs" id="el-beagnj7l">70%</span>
+              </div>
+              <div class="w-full bg-neutral-700 rounded-full h-2.5" id="el-xrq7mnne">
+                <div class="bg-cyan-400 h-2.5 rounded-full" style="width: 70%" id="el-mzrv6l3c"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- AI & Machine Learning -->
+        <div class="bg-neutral-800 rounded-lg p-6 transition-transform hover:transform hover:-translate-y-2 hover:shadow-lg border border-neutral-700" id="el-oe5202g5">
+          <div class="flex items-center mb-4" id="el-wvts0im0">
+            <div class="w-10 h-10 flex items-center justify-center rounded-lg bg-cyan-900/30 mr-3" id="el-e5j782sr">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-cyan-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" id="el-tprj6g97">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" id="el-afzrzyr0"></path>
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold text-white font-mono" id="el-q44bmj0k">AI &amp; Machine Learning</h3>
+          </div>
+          
+          <ul class="text-gray-300 space-y-2" id="el-wtc47pfz">
+            <li class="flex items-center" id="el-mxzxz4ng">
+              <div class="w-2 h-2 bg-cyan-400 rounded-full mr-2" id="el-qlew2lbg"></div>
+              <span id="el-2oh00yek">Computer Vision</span>
+            </li>
+            <li class="flex items-center" id="el-quso08u0">
+              <div class="w-2 h-2 bg-cyan-400 rounded-full mr-2" id="el-1eymmg89"></div>
+              <span id="el-3sp4cotr">Optical Text Recognition</span>
+            </li>
+            <li class="flex items-center" id="el-8d8b5fkq">
+              <div class="w-2 h-2 bg-cyan-400 rounded-full mr-2" id="el-iflrqk1e"></div>
+              <span id="el-xv0tjbnd">Generative AI</span>
+            </li>
+            <li class="flex items-center" id="el-v3wf4kpx">
+              <div class="w-2 h-2 bg-cyan-400 rounded-full mr-2" id="el-4pk1nlxh"></div>
+              <span id="el-b5gmd8pe">Natural Language Processing</span>
+            </li>
+            <li class="flex items-center" id="el-94pdwwy8">
+              <div class="w-2 h-2 bg-cyan-400 rounded-full mr-2" id="el-z8es29yv"></div>
+              <span id="el-z9krfd70">Large Language Models</span>
+            </li>
+          </ul>
+          
+          <div class="mt-4 border-t border-neutral-700 pt-4" id="el-dldpf0xp">
+            <h4 class="text-white font-medium mb-2" id="el-ek3zpf5c">Frameworks &amp; Libraries</h4>
+            <div class="flex flex-wrap gap-2" id="el-kptrwusq">
+              <span class="bg-neutral-700 text-cyan-400 px-2 py-1 rounded-md text-xs" id="el-18sta6mj">TensorFlow</span>
+              <span class="bg-neutral-700 text-cyan-400 px-2 py-1 rounded-md text-xs" id="el-txlzfp73">PyTorch</span>
+              <span class="bg-neutral-700 text-cyan-400 px-2 py-1 rounded-md text-xs" id="el-bhtj7faf">Scikit-learn</span>
+              <span class="bg-neutral-700 text-cyan-400 px-2 py-1 rounded-md text-xs" id="el-3els1mi9">NumPy</span>
+              <span class="bg-neutral-700 text-cyan-400 px-2 py-1 rounded-md text-xs" id="el-1gn276ap">Pandas</span>
+              <span class="bg-neutral-700 text-cyan-400 px-2 py-1 rounded-md text-xs" id="el-nx7elcas">Matplotlib</span>
+              <span class="bg-neutral-700 text-cyan-400 px-2 py-1 rounded-md text-xs" id="el-fedgi6d3">Seaborn</span>
+            </div>
+          </div>
+        </div>
+        
+<!-- AI & Machine Learning -->
+        <div class="bg-neutral-800 rounded-lg p-6 transition-transform hover:transform hover:-translate-y-2 hover:shadow-lg border border-neutral-700" id="el-oe5202g5">
+          <div class="flex items-center mb-4" id="el-wvts0im0">
+            <div class="w-10 h-10 flex items-center justify-center rounded-lg bg-cyan-900/30 mr-3" id="el-e5j782sr">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-cyan-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold text-white font-mono" id="el-q44bmj0k">Cybersecurity</h3>
+          </div>
+          
+          <ul class="text-gray-300 space-y-2" id="el-wtc47pfz">
+            <li class="flex items-center" id="el-mxzxz4ng">
+              <div class="w-2 h-2 bg-cyan-400 rounded-full mr-2" id="el-qlew2lbg"></div>
+              <span id="el-2oh00yek">Computer Networks</span>
+            </li>
+            <li class="flex items-center" id="el-quso08u0">
+              <div class="w-2 h-2 bg-cyan-400 rounded-full mr-2" id="el-1eymmg89"></div>
+              <span id="el-3sp4cotr">Cryptography</span>
+            </li>
+            <li class="flex items-center" id="el-8d8b5fkq">
+              <div class="w-2 h-2 bg-cyan-400 rounded-full mr-2" id="el-iflrqk1e"></div>
+              <span id="el-xv0tjbnd">Kali Linux</span>
+            </li>
+            <li class="flex items-center" id="el-v3wf4kpx">
+              <div class="w-2 h-2 bg-cyan-400 rounded-full mr-2" id="el-4pk1nlxh"></div>
+              <span id="el-b5gmd8pe">Pentesting Tools</span>
+            </li>
+            <li class="flex items-center" id="el-94pdwwy8">
+              <div class="w-2 h-2 bg-cyan-400 rounded-full mr-2" id="el-z8es29yv"></div>
+              <span id="el-z9krfd70">Linux</span>
+            </li>
+          </ul>
+          
+          <div class="mt-4 border-t border-neutral-700 pt-4" id="el-dldpf0xp">
+            <h4 class="text-white font-medium mb-2" id="el-ek3zpf5c">Frameworks &amp; Libraries</h4>
+            <div class="flex flex-wrap gap-2" id="el-kptrwusq">
+              <span class="bg-neutral-700 text-cyan-400 px-2 py-1 rounded-md text-xs" id="el-18sta6mj">Metasploit</span>
+              <span class="bg-neutral-700 text-cyan-400 px-2 py-1 rounded-md text-xs" id="el-txlzfp73">Metasploitable</span>
+              <span class="bg-neutral-700 text-cyan-400 px-2 py-1 rounded-md text-xs" id="el-bhtj7faf">nmap</span>
+              <span class="bg-neutral-700 text-cyan-400 px-2 py-1 rounded-md text-xs" id="el-3els1mi9">Wireshark</span>
+              <span class="bg-neutral-700 text-cyan-400 px-2 py-1 rounded-md text-xs" id="el-1gn276ap">Intrusion Detection Systems</span>
+            </div>
+          </div>
+        </div>
+        
+        
+        <!-- Data Analysis -->
+        <div class="bg-neutral-800 rounded-lg p-6 transition-transform hover:transform hover:-translate-y-2 hover:shadow-lg border border-neutral-700" id="el-0u06va4b">
+          <div class="flex items-center mb-4" id="el-z8562stw">
+            <div class="w-10 h-10 flex items-center justify-center rounded-lg bg-cyan-900/30 mr-3" id="el-7ytt7xo9">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-cyan-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" id="el-dd7cwvut">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" id="el-vz3vpl1l"></path>
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold text-white font-mono" id="el-mtfbivxp">Data Analysis</h3>
+          </div>
+          
+          <div class="space-y-3" id="el-ddkjqyw2">
+            <div class="flex items-center" id="el-zh33r5av">
+              <span class="w-3 h-3 text-cyan-400 mr-2" id="el-s4a0ydgr">•</span>
+              <span class="text-gray-300" id="el-omsv6go3">Statistical Analysis</span>
+            </div>
+            <div class="flex items-center" id="el-vgs5yoca">
+              <span class="w-3 h-3 text-cyan-400 mr-2" id="el-9qs3dya8">•</span>
+              <span class="text-gray-300" id="el-9eo10bji">Data Visualization</span>
+            </div>
+            <div class="flex items-center" id="el-es47hvxk">
+              <span class="w-3 h-3 text-cyan-400 mr-2" id="el-35zxokgw">•</span>
+              <span class="text-gray-300" id="el-h44zfjqb">Data Preprocessing</span>
+            </div>
+            <div class="flex items-center" id="el-0je5tzhq">
+              <span class="w-3 h-3 text-cyan-400 mr-2" id="el-wnd5s29d">•</span>
+              <span class="text-gray-300" id="el-aijgndsp">Feature Engineering</span>
+            </div>
+          </div>
+          
+          <div class="mt-4 pt-4 border-t border-neutral-700" id="el-q5l3kbai">
+            <h4 class="text-white font-medium mb-2" id="el-ylj0ttjp">Tools &amp; Libraries</h4>
+            <div class="flex flex-wrap gap-2" id="el-s5yimzdt">
+              <span class="bg-neutral-700 text-cyan-400 px-2 py-1 rounded-md text-xs" id="el-h33q64to">Pandas</span>
+              <span class="bg-neutral-700 text-cyan-400 px-2 py-1 rounded-md text-xs" id="el-med6bof7">NumPy</span>
+              <span class="bg-neutral-700 text-cyan-400 px-2 py-1 rounded-md text-xs" id="el-45aw8ill">Matplotlib</span>
+              <span class="bg-neutral-700 text-cyan-400 px-2 py-1 rounded-md text-xs" id="el-83erwqp6">Seaborn</span>
+              <span class="bg-neutral-700 text-cyan-400 px-2 py-1 rounded-md text-xs" id="el-o5fidtb8">SciPy</span>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Version Control -->
+        <div class="bg-neutral-800 rounded-lg p-6 transition-transform hover:transform hover:-translate-y-2 hover:shadow-lg border border-neutral-700" id="el-614vxrgv">
+          <div class="flex items-center mb-4" id="el-p9conz4q">
+            <div class="w-10 h-10 flex items-center justify-center rounded-lg bg-cyan-900/30 mr-3" id="el-vvyrpl4o">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-cyan-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" id="el-cuxtwefy">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7v8a2 2 0 002 2h6M8 7V5a2 2 0 012-2h4.586a1 1 0 01.707.293l4.414 4.414a1 1 0 01.293.707V15a2 2 0 01-2 2h-2M8 7H6a2 2 0 00-2 2v10a2 2 0 002 2h8a2 2 0 002-2v-2" id="el-ukkztuv1"></path>
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold text-white font-mono" id="el-wtinjj7q">Version Control</h3>
+          </div>
+          
+          <div class="flex flex-col space-y-4" id="el-fdszl36j">
+            <div class="bg-neutral-700/50 rounded-lg p-4" id="el-noqj3rix">
+              <div class="flex items-center" id="el-03keyv86">
+                <div class="text-xl font-bold text-cyan-400 mr-2" id="el-pzhxnn8f">Git</div>
+                <div class="text-gray-400 text-sm" id="el-wl9yoq18">Advanced</div>
+              </div>
+              <p class="text-gray-300 text-sm mt-2" id="el-me21sb8y">Proficient in branching strategies, merge conflict resolution, and collaborative workflows.</p>
+            </div>
+            
+            <div class="bg-neutral-700/50 rounded-lg p-4" id="el-2opsno9p">
+              <div class="flex items-center" id="el-h6yof0w7">
+                <div class="text-xl font-bold text-cyan-400 mr-2" id="el-zpfj2kez">GitHub</div>
+                <div class="text-gray-400 text-sm" id="el-r6oi7y8j">Advanced</div>
+              </div>
+              <p class="text-gray-300 text-sm mt-2" id="el-x5hwqjso">Experienced with pull requests, code reviews, GitHub Actions, and project management.</p>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Other Skills -->
+        <div class="bg-neutral-800 rounded-lg p-6 transition-transform hover:transform hover:-translate-y-2 hover:shadow-lg border border-neutral-700" id="el-x00dhyd1">
+          <div class="flex items-center mb-4" id="el-mzxp57sz">
+            <div class="w-10 h-10 flex items-center justify-center rounded-lg bg-cyan-900/30 mr-3" id="el-1uxvwiik">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-cyan-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" id="el-sa5p5gum">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" id="el-hnjlxsot"></path>
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold text-white font-mono" id="el-cgp6v0qw">Additional Skills</h3>
+          </div>
+          
+          <div class="grid grid-cols-2 gap-3" id="el-dwzqdd38">
+            <div class="bg-neutral-700/50 rounded-lg p-3 flex flex-col items-center justify-center text-center" id="el-ljtqkoql">
+              <div class="text-cyan-400 font-medium" id="el-3bh7mneb">Web Development</div>
+            </div>
+            <div class="bg-neutral-700/50 rounded-lg p-3 flex flex-col items-center justify-center text-center" id="el-3t67fbsz">
+              <div class="text-cyan-400 font-medium" id="el-665qrmx2" contenteditable="false">Databases</div>
+            </div>
+            <div class="bg-neutral-700/50 rounded-lg p-3 flex flex-col items-center justify-center text-center" id="el-p4hv12a1">
+              <div class="text-cyan-400 font-medium" id="el-rv5tmhfz" contenteditable="false">Mathematics</div>
+            </div>
+            <div class="bg-neutral-700/50 rounded-lg p-3 flex flex-col items-center justify-center text-center" id="el-1jd2mhhk">
+              <div class="text-cyan-400 font-medium" id="el-vlv733ud">Automation</div>
+            </div>
+            <div class="bg-neutral-700/50 rounded-lg p-3 flex flex-col items-center justify-center text-center" id="el-poon3yew">
+              <div class="text-cyan-400 font-medium" id="el-hwi9iyt6">Documentation</div>
+            </div>
+            <div class="bg-neutral-700/50 rounded-lg p-3 flex flex-col items-center justify-center text-center" id="el-peha0ovr">
+              <div class="text-cyan-400 font-medium" id="el-xlskf2ew">Statistics</div>
+            </div>
+            <div class="bg-neutral-700/50 rounded-lg p-3 flex flex-col items-center justify-center text-center" id="el-peha0ovr">
+              <div class="text-cyan-400 font-medium" id="el-xlskf2ew">Critical Thinking</div>
+            </div>
+            <div class="bg-neutral-700/50 rounded-lg p-3 flex flex-col items-center justify-center text-center" id="el-peha0ovr">
+              <div class="text-cyan-400 font-medium" id="el-xlskf2ew">Problem Solving</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Skill Clouds -->
+      <div class="mt-12 bg-neutral-800/50 rounded-lg p-6 border border-neutral-700" id="el-6skbkid3">
+        <h3 class="text-xl font-bold text-white mb-4 font-mono text-center" id="el-x8h25quk">Technical Ecosystem</h3>
+        
+        <div class="flex flex-wrap justify-center gap-3" id="el-x70cf0fo">
+          <span class="bg-cyan-900/30 text-cyan-400 px-3 py-1 rounded-full text-sm" id="el-u8k65bhe">Python</span>
+          <span class="bg-cyan-900/30 text-cyan-400 px-3 py-1 rounded-full text-sm" id="el-5v9smxkz">Java</span>
+          <span class="bg-cyan-900/30 text-cyan-400 px-3 py-1 rounded-full text-sm" id="el-x1zygzqf">JavaScript</span>
+          <span class="bg-cyan-900/30 text-cyan-400 px-3 py-1 rounded-full text-sm" id="el-428hxipe">C</span>
+          <span class="bg-cyan-900/30 text-cyan-400 px-3 py-1 rounded-full text-sm" id="el-ij8tf6d0">C++</span>
+          <span class="bg-cyan-900/30 text-cyan-400 px-3 py-1 rounded-full text-sm" id="el-gly60ro4">MATLAB</span>
+          <span class="bg-cyan-900/30 text-cyan-400 px-3 py-1 rounded-full text-sm" id="el-98e2ltn8">TensorFlow</span>
+          <span class="bg-cyan-900/30 text-cyan-400 px-3 py-1 rounded-full text-sm" id="el-pypytjc2">PyTorch</span>
+          <span class="bg-cyan-900/30 text-cyan-400 px-3 py-1 rounded-full text-sm" id="el-2f5grurv">Scikit-learn</span>
+          <span class="bg-cyan-900/30 text-cyan-400 px-3 py-1 rounded-full text-sm" id="el-czlcop9l">NumPy</span>
+          <span class="bg-cyan-900/30 text-cyan-400 px-3 py-1 rounded-full text-sm" id="el-ga3xzclf">Pandas</span>
+          <span class="bg-cyan-900/30 text-cyan-400 px-3 py-1 rounded-full text-sm" id="el-8i409m90">Matplotlib</span>
+          <span class="bg-cyan-900/30 text-cyan-400 px-3 py-1 rounded-full text-sm" id="el-x2j960or">Seaborn</span>
+          <span class="bg-cyan-900/30 text-cyan-400 px-3 py-1 rounded-full text-sm" id="el-7jdiurnu">SciPy</span>
+          <span class="bg-cyan-900/30 text-cyan-400 px-3 py-1 rounded-full text-sm" id="el-oe5mil8x">MySQL</span>
+          <span class="bg-cyan-900/30 text-cyan-400 px-3 py-1 rounded-full text-sm" id="el-i3mubxw0">PostgreSQL</span>
+          <span class="bg-cyan-900/30 text-cyan-400 px-3 py-1 rounded-full text-sm" id="el-ahx9pbew">Supabase</span>
+          <span class="bg-cyan-900/30 text-cyan-400 px-3 py-1 rounded-full text-sm" id="el-71okt4i3">Django</span>
+          <span class="bg-cyan-900/30 text-cyan-400 px-3 py-1 rounded-full text-sm" id="el-fxehke33">Git</span>
+          <span class="bg-cyan-900/30 text-cyan-400 px-3 py-1 rounded-full text-sm" id="el-ybrmwe8k">GitHub</span>
+          <span class="bg-cyan-900/30 text-cyan-400 px-3 py-1 rounded-full text-sm" id="el-2ic6d6c1">Computer Vision</span>
+          <span class="bg-cyan-900/30 text-cyan-400 px-3 py-1 rounded-full text-sm" id="el-dwigioyi">OCR</span>
+          <span class="bg-cyan-900/30 text-cyan-400 px-3 py-1 rounded-full text-sm" id="el-nefhrrcy">Generative AI</span>
+          <span class="bg-cyan-900/30 text-cyan-400 px-3 py-1 rounded-full text-sm" id="el-i5a0yxef">NLP</span>
+          <span class="bg-cyan-900/30 text-cyan-400 px-3 py-1 rounded-full text-sm" id="el-hz6d9kys">LLM</span>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+              
+</element><element id="b4823052-b156-4246-bd62-abd9a1437daf" data-section-id="b4823052-b156-4246-bd62-abd9a1437daf">
+
+
+                
+<div id="root">
+  <section id="experience" class="py-20 bg-neutral-800">
+    <div class="container mx-auto px-4" id="el-1ygzlmnf">
+      <!-- Section Header -->
+      <div class="mb-12 text-center" id="el-jtjt0k8b">
+        <h2 class="text-3xl md:text-4xl font-bold text-white mb-2 font-mono" id="el-eel9tiiw">
+          <span class="text-cyan-400" id="el-kq166x2i">&lt;</span> Professional Experience <span class="text-cyan-400" id="el-enqwqv2t">/&gt;</span>
+        </h2>
+        <div class="w-20 h-1 bg-cyan-400 mx-auto" id="el-dh4519ed"></div>
+        <p class="text-gray-400 mt-4 max-w-2xl mx-auto" id="el-k9catwl6">A track record of applying AI and software engineering skills to solve real-world problems.</p>
+      </div>
+      
+      <!-- Experience Timeline -->
+      <div class="max-w-4xl mx-auto" id="el-ts1v9qoq">
+        <!-- Current Job -->
+        <div class="bg-neutral-900 rounded-lg border border-neutral-700 overflow-hidden shadow-lg mb-8 hover:shadow-cyan-900/20 transition-shadow duration-300" id="el-elymfw84">
+          <div class="flex flex-col md:flex-row" id="el-specubet">
+            <!-- Company Details -->
+            <div class="w-full md:w-1/3 bg-neutral-700/30 p-6 flex flex-col items-start" id="el-x7l6a4oe">
+              <h3 class="text-xl font-bold text-white mb-1" id="el-ok1c4t4g">Sortin</h3>
+              <div class="text-cyan-400 font-mono text-sm mb-3" id="el-fq4pd4pp">E-commerce Platform for Sustainable Brands</div>
+              <div class="flex items-center text-gray-400 text-sm mb-4" id="el-u1nw8v4f">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" id="el-lpqt8gv8">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" id="el-4qlp274e"></path>
+                </svg>
+                AI and Software Engineer
+              </div>
+              <div class="flex items-center text-gray-400 text-sm mb-4" id="el-i5x6pa0l">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" id="el-q1u6oo7h">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" id="el-py5g6chx"></path>
+                </svg>
+                June 2024 - Feb 2025
+              </div>
+              <div class="flex items-center text-gray-400 text-sm" id="el-zaow79ii">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" id="el-dpmiz1h7">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" id="el-jmif53el"></path>
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" id="el-wilhayxp"></path>
+                </svg>
+                Remote
+              </div>
+              
+              <div class="mt-4 flex flex-wrap gap-2" id="el-3j7uum3q">
+                <span class="bg-neutral-700 text-cyan-400 px-2 py-1 rounded-md text-xs" id="el-55fjtldf">AI</span>
+                <span class="bg-neutral-700 text-cyan-400 px-2 py-1 rounded-md text-xs" id="el-053wwxnd">ML</span>
+                <span class="bg-neutral-700 text-cyan-400 px-2 py-1 rounded-md text-xs" id="el-or8duv5z">Backend Dev</span>
+                <span class="bg-neutral-700 text-cyan-400 px-2 py-1 rounded-md text-xs" id="el-io7v1jcx">Python</span>
+                <span class="bg-neutral-700 text-cyan-400 px-2 py-1 rounded-md text-xs" id="el-io7v1jcx">DSA</span>
+              </div>
+            </div>
+            
+            <!-- Job Description -->
+            <div class="w-full md:w-2/3 p-6" id="el-nz7opgpe">
+              <div class="text-gray-300 space-y-4" id="el-l8focaby">
+                <div class="pb-3 border-b border-neutral-700" id="el-2gr4ywzv">
+                  <p class="text-white font-mono" id="el-hohrrypu">Working on AI-powered sustainable e-commerce solutions.</p>
+                </div>
+                
+                <div id="el-bnkhcf08">
+                  <h4 class="text-white font-medium mb-2 flex items-center" id="el-tlouqxpi">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 text-cyan-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" id="el-kpiicr02">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" id="el-kuarwfna"></path>
+                    </svg>
+                    Artificial Intelligence Models
+                  </h4>
+                  <p class="pl-7 text-gray-400" id="el-1hglctpz">Developed and evaluated AI models for generation and classification tasks.</p>
+                </div>
+                
+                <div id="el-r28axnc7">
+                  <h4 class="text-white font-medium mb-2 flex items-center" id="el-x4yjepp3">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 text-cyan-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" id="el-whuld20a">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2m-2-4h.01M17 16h.01" id="el-iaewqfho"></path>
+                    </svg>
+                    Backend Development
+                  </h4>
+                  <p class="pl-7 text-gray-400" id="el-miuqloeq">Automated the Life Cycle Assessment calculations of manufacturing products, previously done manually, reducing the time by 70%.</p>
+                </div>
+                
+                <div id="el-36oxafyk">
+                  <h4 class="text-white font-medium mb-2 flex items-center" id="el-r6ananvb">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 text-cyan-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" id="el-8buvhtwc">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" id="el-drjx33ms"></path>
+                    </svg>
+                    Software Engineering
+                  </h4>
+                  <p class="pl-7 text-gray-400" id="el-fbjvgm96">Created an algorithm to detect whether users took the metro by checking path superimposition and speeds. Created databases through web scraping.</p>
+                </div>
+                
+                <div id="el-uqg3hrs3">
+                  <h4 class="text-white font-medium mb-2 flex items-center" id="el-8bven4je">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 text-cyan-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" id="el-iyzhtjof">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" id="el-pvtuvw7z"></path>
+                    </svg>
+                    Product Recommendation Chatbot
+                  </h4>
+                  <p class="pl-7 text-gray-400" id="el-cacw38hl">Created chatbot to find and filter second hand products across the web based on user query.</p>
+                </div>
+                
+                <div class="pt-4 mt-4 border-t border-neutral-700" id="el-4mvca4yq">
+                  <div class="text-white font-medium mb-2" id="el-nmndlcjh">Key Achievements</div>
+                  <ul class="list-disc pl-5 text-gray-400 space-y-2" id="el-urdykbjx">
+                    <li id="el-xizi0avw">Reduced manual assessment time by 70% through automation</li>
+                    <li id="el-kr1mia2u">Improved user experience with AI-based projects</li>
+                    <li id="el-0tlod3x0">Developed sustainable solutions with real-world impact</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Call to Action -->
+      <div class="mt-12 text-center" id="el-71pa7kbu">
+        
+      </div>
+    </div>
+  </section>
+</div>
+
+              
+</element><element id="5f9add51-8633-4f9c-95a4-235fbd4c204b" data-section-id="5f9add51-8633-4f9c-95a4-235fbd4c204b">
+
+
+<div id="root">
+  <section id="projects" class="py-20 bg-neutral-900">
+    <div class="container mx-auto px-4">
+      <!-- Section Header -->
+      <div class="mb-12 text-center">
+        <h2 class="text-3xl md:text-4xl font-bold text-white mb-2 font-mono">
+          <span class="text-cyan-400">&lt;</span> Projects <span class="text-cyan-400">/&gt;</span>
+        </h2>
+        <div class="w-20 h-1 bg-cyan-400 mx-auto"></div>
+        <p class="text-gray-400 mt-4 max-w-2xl mx-auto">A collection of innovative solutions showcasing my technical skills and problem-solving capabilities.</p>
+      </div>
+      
+      <!-- Featured Projects -->
+      <div class="mb-16">
+        <h3 class="text-xl text-white font-mono mb-6 text-center">Featured Projects</h3>
+        
+        <!-- Project 1: AI-based Quality Detection System -->
+        <div class="bg-neutral-800 rounded-lg overflow-hidden shadow-lg mb-10 transition-transform hover:transform hover:scale-[1.01] border border-neutral-700">
+          <div class="flex flex-col lg:flex-row">
+            <!-- Project Visual -->
+            <div class="w-full lg:w-1/2 bg-neutral-700 p-8 flex items-center justify-center">
+              <div class="aspect-video w-full max-w-md bg-neutral-900 rounded-lg overflow-hidden relative shadow-lg border border-neutral-600">
+                <!-- Code representation of the project -->
+                <div class="p-4 font-mono text-xs md:text-sm text-left h-full overflow-hidden">
+                  <!-- <div class="text-purple-400">import</div>
+                  <div class="pl-4 text-cyan-300">tensorflow as tf</div>
+                  <div class="text-purple-400">import</div>
+                  <div class="pl-4 text-cyan-300">numpy as np</div>
+                  <div class="text-purple-400">from</div>
+                  <div class="pl-4 text-cyan-300">tensorflow.keras.models import Sequential</div>
+                  <div class="text-purple-400">from</div>
+                  <div class="pl-4 text-cyan-300">tensorflow.keras.layers import Conv2D, MaxPooling2D, Flatten, Dense</div>
+                  <div class="mt-2 text-green-400"># Freshness Detection Model</div>
+                  <div class="text-yellow-300">model = Sequential([</div>
+                  <div class="pl-4 text-cyan-300">Conv2D(32, (3, 3), activation='relu', input_shape=(224, 224, 3)),</div>
+                  <div class="pl-4 text-cyan-300">MaxPooling2D(2, 2),</div>
+                  <div class="pl-4 text-cyan-300">Conv2D(64, (3, 3), activation='relu'),</div>
+                  <div class="pl-4 text-cyan-300">MaxPooling2D(2, 2),</div>
+                  <div class="pl-4 text-cyan-300">Conv2D(128, (3, 3), activation='relu'),</div>
+                  <div class="pl-4 text-cyan-300">MaxPooling2D(2, 2),</div>
+                  <div class="pl-4 text-cyan-300">Flatten(),</div>
+                  <div class="pl-4 text-cyan-300">Dense(512, activation='relu'),</div>
+                  <div class="pl-4 text-cyan-300">Dense(1, activation='sigmoid')</div>
+                  <div class="text-yellow-300">])</div>
+                  <div class="mt-2 text-cyan-300">model.compile(optimizer='adam', loss='binary_crossentropy', metrics=['accuracy'])</div> -->
+                    <div class="text-purple-400">def</div>
+                    <div class="pl-4 text-cyan-300">detect_text(image_path):</div>
+                    <div class="mt-2 text-green-400"># Detects text in the image.</div>
+                    <div class="pl-8 text-gray-300">client = vision.ImageAnnotatorClient()</div>
+                    <div class="text-purple-400">with</div>
+                    <div class="pl-8 text-gray-300">io.open(image_path, 'rb') as image_file:</div>
+                    <div class="pl-8 text-gray-300">content = image_file.read()</div>
+                    <div class="pl-8 text-gray-300">image = vision.Image(content=content)</div>
+                    <div class="pl-8 text-gray-300">response = client.text_detection(image=image)</div>
+                    <div class="pl-8 text-gray-300">texts = response.text_annotations</div>
+                    <div class="text-purple-400">if</div>
+                    <div class="pl-4 text-cyan-300">texts:</div>
+                    <div class="pl-8 text-cyan-300">return texts[0].description</div>
+                    <div class="text-purple-400">else</div>
+                    <div class="pl-4 text-cyan-300">print(f'No text found in {image_path}.')</div>
+                    <div class="pl-4 text-cyan-300">return ''</div>
+                </div>
+                <!-- Animated typing cursor -->
+                <div class="absolute bottom-4 right-4 h-4 w-2 bg-cyan-400 animate-pulse"></div>
+              </div>
+            </div>
+            
+            <!-- Project Info -->
+            <div class="w-full lg:w-1/2 p-8">
+              <div class="text-sm text-cyan-400 font-mono mb-2">Patent Submitted</div>
+              <h3 class="text-2xl font-bold text-white mb-4">AI-based Quality Detection System</h3>
+              
+              <div class="space-y-4 text-gray-300">
+                <p>
+                  A comprehensive solution for quality control in the food industry using computer vision and machine learning techniques. The system addresses two key problems:
+                </p>
+                
+                <div class="pl-4 border-l-2 border-cyan-400">
+                  <div class="font-medium text-white">Freshness Detection Model:</div>
+                  <p class="text-sm text-gray-400">
+                    Implemented a CNN to classify the freshness of produce with 92% accuracy, enabling automated quality checks.
+                  </p>
+                </div>
+                
+                <div class="pl-4 border-l-2 border-cyan-400">
+                  <div class="font-medium text-white">Expiry Date OCR Model:</div>
+                  <p class="text-sm text-gray-400">
+                    Built an OCR solution that achieves 98% accuracy in recognizing manufacturing and expiry dates on packaged goods.
+                  </p>
+                </div>
+                
+                <div class="mt-6">
+                  <div class="font-medium text-white mb-2">Technologies Used:</div>
+                  <div class="flex flex-wrap gap-2">
+                    <span class="px-3 py-1 bg-neutral-700 rounded-full text-xs text-cyan-400">Python</span>
+                    <span class="px-3 py-1 bg-neutral-700 rounded-full text-xs text-cyan-400">TensorFlow</span>
+                    <span class="px-3 py-1 bg-neutral-700 rounded-full text-xs text-cyan-400">Neural Networks</span>
+                    <span class="px-3 py-1 bg-neutral-700 rounded-full text-xs text-cyan-400">Google Cloud Vision</span>
+                    <span class="px-3 py-1 bg-neutral-700 rounded-full text-xs text-cyan-400">OpenCV</span>
+                    <span class="px-3 py-1 bg-neutral-700 rounded-full text-xs text-cyan-400">OCR</span>
+                  </div>
+                </div>
+                
+                <div class="mt-6 space-y-3">
+                  <div class="flex items-center text-sm">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                    <span>92% accuracy in produce freshness classification</span>
+                  </div>
+                  <div class="flex items-center text-sm">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                    <span>98% accuracy in date recognition</span>
+                  </div>
+                  <div class="flex items-center text-sm">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                    <span>Finalist in Flipkart GRID 4.0 Competition</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Project 2: Skybox - GenAI Gmail -->
+        <div class="bg-neutral-800 rounded-lg overflow-hidden shadow-lg mb-10 transition-transform hover:transform hover:scale-[1.01] border border-neutral-700">
+          <div class="flex flex-col lg:flex-row-reverse">
+            <!-- Project Visual -->
+            <div class="w-full lg:w-1/2 bg-neutral-700 p-8 flex items-center justify-center">
+              <div class="aspect-video w-full max-w-md bg-neutral-900 rounded-lg overflow-hidden relative shadow-lg border border-neutral-600">
+                <!-- UI mockup representation -->
+                <div class="p-4 h-full flex flex-col">
+                  <!-- Email client header -->
+                  <div class="bg-neutral-800 p-2 rounded-t-md flex items-center border-b border-neutral-600">
+                    <div class="w-3 h-3 rounded-full bg-red-500 mr-2"></div>
+                    <div class="w-3 h-3 rounded-full bg-yellow-500 mr-2"></div>
+                    <div class="w-3 h-3 rounded-full bg-green-500 mr-2"></div>
+                    <div class="text-gray-400 text-xs font-mono ml-2">Skybox Mail</div>
+                  </div>
+                  
+                  <!-- Email client content -->
+                  <div class="flex flex-1">
+                    <!-- Sidebar -->
+                    <div class="w-1/4 bg-neutral-800 border-r border-neutral-600 p-2">
+                      <div class="bg-cyan-900/30 text-cyan-400 rounded p-1 text-xs mb-2">Compose</div>
+                      <div class="text-gray-400 text-xs mb-1">Inbox</div>
+                      <div class="text-gray-400 text-xs mb-1">Sent</div>
+                      <div class="text-gray-400 text-xs mb-1">Drafts</div>
+                    </div>
+                    
+                    <!-- Email compose area -->
+                    <div class="w-3/4 p-2 flex flex-col">
+                      <div class="flex mb-2">
+                        <div class="text-gray-400 text-xs w-1/5">To:</div>
+                        <div class="text-cyan-400 text-xs w-4/5">recipient@example.com</div>
+                      </div>
+                      <div class="flex mb-2">
+                        <div class="text-gray-400 text-xs w-1/5">Subject:</div>
+                        <div class="text-white text-xs w-4/5">Project Update</div>
+                      </div>
+                      <div class="flex-1 bg-neutral-700 rounded p-2 text-xs text-gray-300">
+                        <div class="mb-2">Hello,</div>
+                        <div class="mb-2">I'm writing to provide an update on our AI project...</div>
+                        <div class="text-xs text-cyan-400 italic">[ AI generated content suggestions ]</div>
+                      </div>
+                      <div class="mt-2 text-right">
+                        <span class="bg-cyan-600 text-white text-xs px-2 py-1 rounded">Send</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Project Info -->
+            <div class="w-full lg:w-1/2 p-8">
+              <div class="text-sm text-cyan-400 font-mono mb-2">Patent Submitted</div>
+              <h3 class="text-2xl font-bold text-white mb-4">Skybox – GenAI Gmail</h3>
+              
+              <div class="space-y-4 text-gray-300">
+                <p>
+                  A Gmail web app clone enhanced with AI capabilities to improve productivity and email management.
+                </p>
+                
+                <div class="pl-4 border-l-2 border-cyan-400">
+                  <div class="font-medium text-white">Generative AI Integration:</div>
+                  <p class="text-sm text-gray-400">
+                    Implemented AI algorithms to generate email templates and content suggestions based on context and user preferences.
+                  </p>
+                </div>
+                
+                <div class="pl-4 border-l-2 border-cyan-400">
+                  <div class="font-medium text-white">Packet Delivery Tracker:</div>
+                  <p class="text-sm text-gray-400">
+                    Developed an automated system to track and organize package delivery information from confirmation emails.
+                  </p>
+                </div>
+                
+                <div class="mt-6">
+                  <div class="font-medium text-white mb-2">Technologies Used:</div>
+                  <div class="flex flex-wrap gap-2">
+                    <span class="px-3 py-1 bg-neutral-700 rounded-full text-xs text-cyan-400">Python</span>
+                    <span class="px-3 py-1 bg-neutral-700 rounded-full text-xs text-cyan-400">JavaScript</span>
+                    <span class="px-3 py-1 bg-neutral-700 rounded-full text-xs text-cyan-400">HTML/CSS</span>
+                    <span class="px-3 py-1 bg-neutral-700 rounded-full text-xs text-cyan-400">SQL Databases</span>
+                    <span class="px-3 py-1 bg-neutral-700 rounded-full text-xs text-cyan-400">LLMs</span>
+                    <span class="px-3 py-1 bg-neutral-700 rounded-full text-xs text-cyan-400">REST APIs</span>
+                  </div>
+                </div>
+                
+                <div class="mt-6 space-y-3">
+                  <div class="flex items-center text-sm">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                    <span>Smart email composition suggestions</span>
+                  </div>
+                  <div class="flex items-center text-sm">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                    <span>Automated package tracking system</span>
+                  </div>
+                  <div class="flex items-center text-sm">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                    <span>Responsive web interface</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Project 3: Ciphers -->
+        <div class="bg-neutral-800 rounded-lg overflow-hidden shadow-lg transition-transform hover:transform hover:scale-[1.01] border border-neutral-700">
+          <div class="flex flex-col lg:flex-row">
+            <!-- Project Visual -->
+            <div class="w-full lg:w-1/2 bg-neutral-700 p-8 flex items-center justify-center">
+              <div class="aspect-video w-full max-w-md bg-neutral-900 rounded-lg overflow-hidden relative shadow-lg border border-neutral-600">
+                <!-- Encryption visualization -->
+                <div class="p-4 font-mono text-xs md:text-sm h-full flex flex-col">
+                  <div class="flex-1 overflow-hidden">
+                    <div class="text-green-400 mb-2">// Cryptographic Ciphers Implementation</div>
+                    <div class="text-cyan-300">function caesarCipher(text, shift) {</div>
+                    <div class="pl-4 text-gray-300">let result = "";</div>
+                    <div class="pl-4 text-gray-300">for (let i = 0; i < text.length; i++) {</div>
+                    <div class="pl-8 text-gray-300">let char = text[i];</div>
+                    <div class="pl-8 text-gray-300">if (char.match(/[a-z]/i)) {</div>
+                    <div class="pl-12 text-gray-300">const code = text.charCodeAt(i);</div>
+                    <div class="pl-12 text-gray-300">// Uppercase letters</div>
+                    <div class="pl-12 text-gray-300">if (code >= 65 && code <= 90) {</div>
+                    <div class="pl-16 text-gray-300">char = String.fromCharCode(((code - 65 + shift) % 26) + 65);</div>
+                    <div class="pl-12 text-gray-300">}</div>
+                    <div class="pl-12 text-gray-300">// Lowercase letters</div>
+                    <div class="pl-12 text-gray-300">else if (code >= 97 && code <= 122) {</div>
+                    <div class="pl-16 text-gray-300">char = String.fromCharCode(((code - 97 + shift) % 26) + 97);</div>
+                    <div class="pl-12 text-gray-300">}</div>
+                    <div class="pl-8 text-gray-300">}</div>
+                    <div class="pl-8 text-gray-300">result += char;</div>
+                    <div class="pl-4 text-gray-300">}</div>
+                    <div class="pl-4 text-gray-300">return result;</div>
+                    <div class="text-cyan-300">}</div>
+                  </div>
+                  
+                  <!-- Input/Output Section -->
+                  <div class="mt-2 border-t border-neutral-700 pt-2">
+                    <div class="flex justify-between text-xs">
+                      <div class="text-gray-400">Input: <span class="text-white">HELLO WORLD</span></div>
+                      <div class="text-gray-400">Shift: <span class="text-cyan-400">3</span></div>
+                    </div>
+                    <div class="mt-1 text-gray-400">
+                      Output: <span class="text-green-400">KHOOR ZRUOG</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Project Info -->
+            <div class="w-full lg:w-1/2 p-8">
+              <!-- <div class="text-sm text-cyan-400 font-mono mb-2">Cryptography / Web Development</div> -->
+              <h3 class="text-2xl font-bold text-white mb-4">Ciphers</h3>
+              
+              <div class="space-y-4 text-gray-300">
+                <p>
+                  A web application that demonstrates and implements four different cryptographic ciphers, allowing users to encrypt and decrypt messages securely.
+                </p>
+                
+                <div class="pl-4 border-l-2 border-cyan-400">
+                  <div class="font-medium text-white">Implemented Ciphers:</div>
+                  <ul class="text-sm text-gray-400 list-disc pl-5 space-y-1 mt-1">
+                    <li>Caesar Cipher - A substitution cipher where each letter is shifted by a fixed number</li>
+                    <li>Vigenère Cipher - A polyalphabetic substitution cipher using a keyword</li>
+                    <li>Transposition Cipher - Rearranges the positions of characters</li>
+                    <li>Substitution Cipher - Full alphabet mapping for encryption</li>
+                  </ul>
+                </div>
+                
+                <div class="pl-4 border-l-2 border-cyan-400">
+                  <div class="font-medium text-white">Key Features:</div>
+                  <p class="text-sm text-gray-400">
+                    Interactive interface with real-time encryption/decryption, visualization of the encryption process, and educational explanations of each cipher's mechanism and history.
+                  </p>
+                </div>
+                
+                <div class="mt-6">
+                  <div class="font-medium text-white mb-2">Technologies Used:</div>
+                  <div class="flex flex-wrap gap-2">
+                    <span class="px-3 py-1 bg-neutral-700 rounded-full text-xs text-cyan-400">Java</span>
+                    <span class="px-3 py-1 bg-neutral-700 rounded-full text-xs text-cyan-400">JavaScript</span>
+                    <span class="px-3 py-1 bg-neutral-700 rounded-full text-xs text-cyan-400">HTML</span>
+                    <span class="px-3 py-1 bg-neutral-700 rounded-full text-xs text-cyan-400">Cryptography</span>
+                    <span class="px-3 py-1 bg-neutral-700 rounded-full text-xs text-cyan-400">Web APIs</span>
+                  </div>
+                </div>
+                
+                <div class="mt-6 space-y-3">
+                  <div class="flex items-center text-sm">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-cyan-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+                    </svg>
+                    <span>End-to-end encryption implementation</span>
+                  </div>
+                  <div class="flex items-center text-sm">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-cyan-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+                    </svg>
+                    <span>Interactive cipher visualization</span>
+                  </div>
+                  <div class="flex items-center text-sm">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-cyan-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+                    </svg>
+                    <span>Educational cryptography resource</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Other Projects Grid -->
+      <div>
+        <h3 class="text-xl text-white font-mono mb-6 text-center">Additional Projects</h3>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <!-- Project Card 1 -->
+          <div class="bg-neutral-800 rounded-lg overflow-hidden border border-neutral-700 hover:border-cyan-500 transition-all duration-300 shadow-lg h-full">
+            <div class="bg-neutral-700/30 p-5 border-b border-neutral-700">
+              <div class="flex justify-between items-center mb-2">
+                <h4 class="text-lg font-bold text-white">AI Crowd Management</h4>
+                <span class="text-xs px-2 py-1 bg-cyan-900/50 text-cyan-400 rounded-full">HackSRM</span>
+              </div>
+              <div class="text-cyan-400 text-sm font-mono">OpenCV / Computer Vision</div>
+            </div>
+            <div class="p-5">
+              <p class="text-gray-400 text-sm mb-4">
+                A system to reduce waiting times in queues by detecting crowd density using OpenCV and notifying users through WhatsApp when queue density is lower.
+              </p>
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span class="bg-neutral-700 text-xs text-cyan-400 px-2 py-1 rounded-md">OpenCV</span>
+                <span class="bg-neutral-700 text-xs text-cyan-400 px-2 py-1 rounded-md">Python</span>
+                <span class="bg-neutral-700 text-xs text-cyan-400 px-2 py-1 rounded-md">WhatsApp API</span>
+              </div>
+              <div class="flex items-center text-xs text-gray-500 mt-auto">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1 text-yellow-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+                <span>Runner Up in HackSRM 2023</span>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Project Card 2 -->
+          <div class="bg-neutral-800 rounded-lg overflow-hidden border border-neutral-700 hover:border-cyan-500 transition-all duration-300 shadow-lg h-full">
+            <div class="bg-neutral-700/30 p-5 border-b border-neutral-700">
+              <h4 class="text-lg font-bold text-white mb-2">Geodesic Centers Algorithm</h4>
+              <div class="text-cyan-400 text-sm font-mono">Mathematics / Python</div>
+            </div>
+            <div class="p-5">
+              <p class="text-gray-400 text-sm mb-4">
+                Created an algorithm to calculate the geodesic center of a general planar shape and applied it to identify optimal facility locations for Indian states.
+              </p>
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span class="bg-neutral-700 text-xs text-cyan-400 px-2 py-1 rounded-md">Python</span>
+                <span class="bg-neutral-700 text-xs text-cyan-400 px-2 py-1 rounded-md">Computational Geometry</span>
+                <span class="bg-neutral-700 text-xs text-cyan-400 px-2 py-1 rounded-md">GIS</span>
+              </div>
+              <div class="flex items-center text-xs text-gray-500 mt-auto">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1 text-cyan-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
+                </svg>
+                <span>Research Project</span>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Project Card 3 -->
+          <div class="bg-neutral-800 rounded-lg overflow-hidden border border-neutral-700 hover:border-cyan-500 transition-all duration-300 shadow-lg h-full">
+            <div class="bg-neutral-700/30 p-5 border-b border-neutral-700">
+              <h4 class="text-lg font-bold text-white mb-2">Light-Spiking Devices Simulation</h4>
+              <div class="text-cyan-400 text-sm font-mono">AI / Electronics</div>
+            </div>
+            <div class="p-5">
+              <p class="text-gray-400 text-sm mb-4">
+                Applied AI tools to simulate Resonant Tunnelling Diodes and other electronic devices, merging computer science and electronics for innovative device modeling.
+              </p>
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span class="bg-neutral-700 text-xs text-cyan-400 px-2 py-1 rounded-md">AI</span>
+                <span class="bg-neutral-700 text-xs text-cyan-400 px-2 py-1 rounded-md">Python</span>
+                <span class="bg-neutral-700 text-xs text-cyan-400 px-2 py-1 rounded-md">Electronics</span>
+                <span class="bg-neutral-700 text-xs text-cyan-400 px-2 py-1 rounded-md">Simulation</span>
+              </div>
+              <div class="flex items-center text-xs text-gray-500 mt-auto">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1 text-cyan-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
+                </svg>
+                <span>Interdisciplinary Research</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+</element><element id="3b74e763-eae2-45e9-93d9-2c8e5ad89800" data-section-id="3b74e763-eae2-45e9-93d9-2c8e5ad89800">
+
+
+                
+<div id="root">
+  <section id="research" class="py-20 bg-neutral-800">
+    <div class="container mx-auto px-4" id="el-p5mio91t">
+      <!-- Section Header -->
+      <div class="mb-12 text-center" id="el-r1pr330v">
+        <h2 class="text-3xl md:text-4xl font-bold text-white mb-2 font-mono" id="el-8xjxvupk">
+          <span class="text-cyan-400" id="el-jz5ppbyv">&lt;</span> Research Work <span class="text-cyan-400" id="el-tgrd0nfq">/&gt;</span>
+        </h2>
+        <div class="w-20 h-1 bg-cyan-400 mx-auto" id="el-nloc6tro"></div>
+        <p class="text-gray-400 mt-4 max-w-2xl mx-auto" id="el-rsu9wc3v">Exploring the frontiers of technology through academic research and innovation.</p>
+      </div>
+      
+      <!-- Research Projects Section -->
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-8" id="el-9z3gxh7n">
+        <!-- Research Project 1 -->
+        <div class="bg-neutral-900 rounded-lg shadow-xl overflow-hidden border border-neutral-700 hover:shadow-cyan-900/20 transition-shadow duration-300" id="el-ns5khy99">
+          <div class="relative" id="el-fom4evsr">
+            <!-- Paper-style element -->
+            <div class="absolute -right-4 -top-4 w-16 h-16 bg-neutral-800 shadow-lg transform rotate-45 border border-neutral-700" id="el-fqsm8dh1"></div>
+            
+            <div class="p-6 relative" id="el-yf6249sn">
+              <div class="bg-cyan-900/20 text-cyan-400 rounded-full px-3 py-1 text-xs inline-block mb-3" id="el-mw7bt1xi">Mathematics &amp; Algorithms</div>
+              <h3 class="text-xl font-bold text-white mb-3" id="el-ccq0gqp0" contenteditable="false"><div>Evaluation of AI Models for Writing Business</div><div>Emails</div></h3>
+              
+              <div class="flex items-center mb-4 text-sm text-gray-400" id="el-pbll5tua">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1 text-cyan-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" id="el-r3ysmify">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" id="el-upiwii17"></path>
+                </svg>
+                <span id="el-50xtxgh7" contenteditable="false" class="">Guide:&nbsp;Dr. Ajay Bhardwaj</span>
+              </div>
+              
+              <!-- <p class="text-gray-300 mb-4" id="el-7q2wn1xm" contenteditable="false"></p><div>&nbsp;A comparative evaluation of four</div><div>widely used free LLMs—OpenAI-GPT-4o-mini, Google-Gemini-</div><div>2.0-Flash, Claude-3.7-Sonnet, and Meta-Llama3-70b—in terms of</div><div>producing professional business emails to suit various scenarios.</div><p></p> -->
+              <p class="text-gray-300 mb-4" id="el-rn76lh0i">
+                A comparative evaluation of four widely used free LLMs—OpenAI-GPT-4o-mini, Google-Gemini-2.0-Flash, Claude-3.7-Sonnet, and Meta-Llama3-70b—in terms of producing professional business emails to suit various scenarios.
+              </p>
+              <div class="bg-neutral-800 p-4 rounded-lg mb-4" id="el-zgyljw7d">
+                <div class="font-mono text-xs text-gray-400" id="el-i2du5652">
+                      <div id="el-ghi789"><span class="text-pink-400">def</span> <span class="text-cyan-400">analyze_grammar</span>(text):</div>
+                      <div class="pl-4" id="el-jkl012"><span class="text-pink-400">try</span>:</div>
+                      <div class="pl-8" id="el-mno345">matches = lt.<span class="text-cyan-400">check</span>(text)</div>
+                      <div class="pl-8" id="el-pqr678"><span class="text-pink-400">return</span> <span class="text-yellow-300">len</span>(matches)</div>
+                      <div class="pl-8" id="el-thmxge6z"><span class="text-green-400" id="el-eg78ajc1"># len(matches) is the number of errors detected</span></div>
+                      <div class="pl-4" id="el-stu901"><span class="text-pink-400">except</span> <span class="text-yellow-300">Exception</span> <span class="text-cyan-400">as</span> e:</div>
+                      <div class="pl-8" id="el-vwx234">print(f<span class="text-green-400">"Grammar check error: {e}"</span>)</div>
+                      <div class="pl-8" id="el-yza567"><span class="text-pink-400">return</span> -1</div>
+                </div>
+              </div>
+              
+              <div class="space-y-2" id="el-762gdp2o">
+                <div class="flex items-center text-sm text-gray-400" id="el-vmtzjwwa">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 text-cyan-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" id="el-7irlyv90">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" id="el-qqplwmyf"></path>
+                  </svg>
+                  <span id="el-lq043869">Implemented in Python</span>
+                </div>
+                
+                <div class="flex items-center text-sm text-gray-400" id="el-xbgpuizf">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 text-cyan-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" id="el-rwr5ez24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" id="el-8471ix5l"></path>
+                  </svg>
+                  <span id="el-x2goy8eb" contenteditable="false" class="">Applied to AI generated&nbsp; emails</span>
+                </div>
+                
+                <div class="flex items-center text-sm text-gray-400" id="el-cjq6t8ch">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 text-cyan-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" id="el-i49tvvw4">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" id="el-6k7qvitl"></path>
+                  </svg>
+                  <span id="el-l9spfkim" contenteditable="false" class="">Paper submitted</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Research Project 2 -->
+        <div class="bg-neutral-900 rounded-lg shadow-xl overflow-hidden border border-neutral-700 hover:shadow-cyan-900/20 transition-shadow duration-300" id="el-yzhjogi7">
+          <div class="relative" id="el-c9bi4t39">
+            <!-- Paper-style element -->
+            <div class="absolute -right-4 -top-4 w-16 h-16 bg-neutral-800 shadow-lg transform rotate-45 border border-neutral-700" id="el-c3l3wju1"></div>
+            
+            <div class="p-6 relative" id="el-79ssipi9">
+              <div class="bg-cyan-900/20 text-cyan-400 rounded-full px-3 py-1 text-xs inline-block mb-3" id="el-50wcvo1j">AI &amp; Electronics</div>
+              <h3 class="text-xl font-bold text-white mb-3" id="el-38p76t5i">Light-Spiking Devices using AI</h3>
+              
+              <div class="flex items-center mb-4 text-sm text-gray-400" id="el-8h0jutnz">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1 text-cyan-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" id="el-31hhhjht">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" id="el-bt7iu303"></path>
+                </svg>
+                <span id="el-ze8jqjqe">Guide: Dr. Swagata Samanta</span>
+              </div>
+              
+              <p class="text-gray-300 mb-4" id="el-rn76lh0i">
+                Applying AI tools to simulate Resonant Tunnelling Diodes and other electronic devices. This work merges the fields of computer science and electronics.
+              </p>
+              
+              <div class="bg-neutral-800 p-4 rounded-lg mb-4" id="el-kpv2dtdh">
+                <div class="font-mono text-xs text-gray-400" id="el-0gv1ud9f">
+                  <div id="el-i84mrh8c"><span class="text-cyan-400" id="el-zgtf24mc">import</span> tensorflow <span class="text-cyan-400" id="el-hvvn6ewl">as</span> tf</div>
+                  <div id="el-mhwuhsxf"><span class="text-cyan-400" id="el-2kvgquy2">import</span> numpy <span class="text-cyan-400" id="el-a0lhgawq">as</span> np</div>
+                  <div id="el-bdzzwv5r"><span class="text-pink-400" id="el-9ckw97zs">class</span> <span class="text-yellow-300" id="el-cjhom76p">RTDSimulator</span>:</div>
+                  <div class="pl-4" id="el-00ku2f8w"><span class="text-pink-400" id="el-fgwc9zcf">def</span> <span class="text-cyan-400" id="el-ghgehptp">__init__</span>(self, parameters):</div>
+                  <div class="pl-8" id="el-mlkokkni">self.params = parameters</div>
+                  <div class="pl-4" id="el-0uebsrcl"><span class="text-pink-400" id="el-r8i7baac">def</span> <span class="text-cyan-400" id="el-7qka66zc">predict_behavior</span>(self, input_signal):</div>
+                  <div class="pl-8" id="el-thmxge6z"><span class="text-green-400" id="el-eg78ajc1"># AI model for device simulation</span></div>
+                </div>
+              </div>
+              
+              <div class="space-y-2" id="el-zy4fwwaj">
+                <div class="flex items-center text-sm text-gray-400" id="el-pov9qsce">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 text-cyan-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" id="el-5x0b8koc">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" id="el-8dxm2px3"></path>
+                  </svg>
+                  <span id="el-yag7eoe3">AI-based device simulation</span>
+                </div>
+                
+                <div class="flex items-center text-sm text-gray-400" id="el-4wqq4rwv">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 text-cyan-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" id="el-fji9zxjl">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" id="el-p3j5begd"></path>
+                  </svg>
+                  <span id="el-m4n54k92">Interdisciplinary research</span>
+                </div>
+                
+                <div class="flex items-center text-sm text-gray-400" id="el-dzv6kpox">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 text-cyan-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" id="el-w5sbzo3a">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" id="el-k2g513qe"></path>
+                  </svg>
+                  <span id="el-09bvpzza">Novel semiconductor modeling</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Research Project 3 -->
+        <div class="bg-neutral-900 rounded-lg shadow-xl overflow-hidden border border-neutral-700 hover:shadow-cyan-900/20 transition-shadow duration-300" id="el-7strmwun">
+          <div class="relative" id="el-69rgtoqj">
+            <!-- Paper-style element -->
+            <div class="absolute -right-4 -top-4 w-16 h-16 bg-neutral-800 shadow-lg transform rotate-45 border border-neutral-700" id="el-0x88ztj9"></div>
+            
+            <div class="p-6 relative" id="el-okjmva03">
+              <div class="bg-cyan-900/20 text-cyan-400 rounded-full px-3 py-1 text-xs inline-block mb-3" id="el-95xdugoy">Math &amp; Machine Learning</div>
+              <h3 class="text-xl font-bold text-white mb-3" id="el-zlj92j88">Applications of Math in Machine Learning</h3>
+              
+              <div class="flex items-center mb-4 text-sm text-gray-400" id="el-7spktxn1">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1 text-cyan-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" id="el-izew0wc9">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" id="el-iauyij0w"></path>
+                </svg>
+                <span id="el-c2930sxz">Guide: Dr. Manish Kumar Pandey</span>
+              </div>
+              
+              <p class="text-gray-300 mb-4" id="el-9xorct7j">
+                Analysis of time series, Linear Regression and Monte Carlo simulation applications in machine learning algorithms and predictive models.
+              </p>
+              
+              <div class="bg-neutral-800 p-4 rounded-lg mb-4" id="el-ftpgu2x5">
+                <div class="font-mono text-xs text-gray-400" id="el-em493szh">
+                  <div id="el-dgykqjgl"><span class="text-pink-400" id="el-ls15daa3">import</span> numpy <span class="text-pink-400" id="el-wbyvmr77">as</span> np</div>
+                  <div id="el-lp8h4som"><span class="text-pink-400" id="el-izlh861v">import</span> matplotlib.pyplot <span class="text-pink-400" id="el-bu4dqc4y">as</span> plt</div>
+                  <div id="el-oe9shrz2"><span class="text-pink-400" id="el-v6z5ijlt">from</span> sklearn.linear_model <span class="text-pink-400" id="el-ytz9oljd">import</span> LinearRegression</div>
+                  <div class="text-green-400" id="el-0inm3oy7"># Time series forecasting with mathematical models</div>
+                  <div id="el-k9thvj8h">X = np.array(time_data).reshape(-1, 1)</div>
+                  <div id="el-lvy4kloc">model = LinearRegression().fit(X, y_data)</div>
+                  <div id="el-xcs0lb40">predictions = model.predict(X_future)</div>
+                </div>
+              </div>
+              
+              <div class="space-y-2" id="el-8qejtvyn">
+                <div class="flex items-center text-sm text-gray-400" id="el-5ey8r9vu">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 text-cyan-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" id="el-n57yafaa">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" id="el-c56wmdkz"></path>
+                  </svg>
+                  <span id="el-jvjg83xs">Time series analysis</span>
+                </div>
+                
+                <div class="flex items-center text-sm text-gray-400" id="el-qsilxvoe">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 text-cyan-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" id="el-pvyoc40a">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" id="el-o8v7foh1"></path>
+                  </svg>
+                  <span id="el-u9z603dw">Linear regression models</span>
+                </div>
+                
+                <div class="flex items-center text-sm text-gray-400" id="el-dgxo9tee">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 text-cyan-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" id="el-59vqov39">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" id="el-umbktmhp"></path>
+                  </svg>
+                  <span id="el-s3bfinv0">Monte Carlo simulations</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Research Interests -->
+      <div class="mt-16 bg-neutral-900 rounded-lg border border-neutral-700 p-8" id="el-08b0uyum">
+        <h3 class="text-xl text-white font-mono mb-6 text-center" id="el-q2q0kr2v">Research Interests</h3>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6" id="el-uooe0kfz">
+          <!-- Interest Group 1 -->
+          <div class="text-center" id="el-bs7rbqa5">
+            <h4 class="text-white font-bold mb-2" id="el-oxxg49d3">AI &amp; Machine Learning</h4>
+            <ul class="text-gray-400 text-sm space-y-1" id="el-be1azqe1">
+              <li id="el-j7h0tspt">Computer Vision Applications</li>
+              <li id="el-kc0uga1c">Neural Networks</li>
+              <li id="el-45iz45pk">Generative AI Models</li>
+            </ul>
+          </div>
+          
+          <!-- Interest Group 2 -->
+          <div class="text-center" id="el-hyyyvwfq">
+            <h4 class="text-white font-bold mb-2" id="el-rfk77hty">Mathematical Computing</h4>
+            <ul class="text-gray-400 text-sm space-y-1" id="el-s2c1lrgi">
+              <li id="el-qqc9zkdx">Algorithm Design</li>
+              <li id="el-x9bshu3a">Optimization Techniques</li>
+              <li id="el-cm6opdiq">Statistical Analysis</li>
+            </ul>
+          </div>
+          
+          <!-- Interest Group 3 -->
+          <div class="text-center" id="el-zozfye47">
+            <h4 class="text-white font-bold mb-2" id="el-jpiba0e5">Interdisciplinary Studies</h4>
+            <ul class="text-gray-400 text-sm space-y-1" id="el-cy2amwz6">
+              <li id="el-38iva5sk">AI in Healthcare</li>
+              <li id="el-ubs5cg7c">Sustainable Technology</li>
+              <li id="el-f0zhey32">Human-Computer Interaction</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+              
+</element><element id="c0da71ed-a3c4-4ebe-bf29-ea6f873f704c" data-section-id="c0da71ed-a3c4-4ebe-bf29-ea6f873f704c">
+
+
+<div id="root">
+  <section id="achievements" class="py-20 bg-neutral-900">
+    <div class="container mx-auto px-4">
+      <!-- Section Header -->
+      <div class="mb-12 text-center">
+        <h2 class="text-3xl md:text-4xl font-bold text-white mb-2 font-mono">
+          <span class="text-cyan-400">&lt;</span> Achievements <span class="text-cyan-400">/&gt;</span>
+        </h2>
+        <div class="w-20 h-1 bg-cyan-400 mx-auto"></div>
+        <p class="text-gray-400 mt-4 max-w-2xl mx-auto">Recognitions and accomplishments throughout my academic and professional journey.</p>
+      </div>
+      
+      <!-- Trophy Achievements Section -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+        <!-- Achievement 1 -->
+        <div class="bg-neutral-800 rounded-lg overflow-hidden border border-neutral-700 transform transition duration-300 hover:scale-105 hover:shadow-lg hover:shadow-cyan-900/20">
+          <div class="relative h-40 bg-gradient-to-br from-cyan-900/30 to-neutral-800 p-6 flex items-center justify-center">
+            <div class="absolute top-0 left-0 w-full h-full overflow-hidden opacity-10">
+              <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-cyan-400 via-neutral-800 to-neutral-800 opacity-30"></div>
+            </div>
+            <div class="relative">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 text-cyan-400 mx-auto mb-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
+              </svg>
+              <div class="absolute -right-2 -top-2 bg-cyan-600 text-white text-xs rounded-full w-8 h-8 flex items-center justify-center font-bold">2nd</div>
+            </div>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold text-white mb-2">HackSRM Runner Up</h3>
+            <p class="text-sm text-gray-400 mb-4">
+              Developed an AI-based Crowd Management System that reduced waiting times for students in dining halls, libraries, and out-pass queues.
+            </p>
+            <div class="flex items-center text-cyan-400 text-sm font-mono">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+              </svg>
+              November 2023
+            </div>
+            <div class="mt-4 flex flex-wrap gap-2">
+              <span class="px-2 py-1 bg-neutral-700 rounded-md text-xs text-cyan-400">OpenCV</span>
+              <span class="px-2 py-1 bg-neutral-700 rounded-md text-xs text-cyan-400">WhatsApp Bot</span>
+              <span class="px-2 py-1 bg-neutral-700 rounded-md text-xs text-cyan-400">Computer Vision</span>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Achievement 2 -->
+        <div class="bg-neutral-800 rounded-lg overflow-hidden border border-neutral-700 transform transition duration-300 hover:scale-105 hover:shadow-lg hover:shadow-cyan-900/20">
+          <div class="relative h-40 bg-gradient-to-br from-cyan-900/30 to-neutral-800 p-6 flex items-center justify-center">
+            <div class="absolute top-0 left-0 w-full h-full overflow-hidden opacity-10">
+              <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-cyan-400 via-neutral-800 to-neutral-800 opacity-30"></div>
+            </div>
+            <div class="relative">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 text-cyan-400 mx-auto mb-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
+              </svg>
+              <div class="absolute -right-2 -top-2 bg-cyan-600 text-white text-xs rounded-full w-8 h-8 flex items-center justify-center font-bold">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold text-white mb-2">Flipkart GRID 4.0 Finalist</h3>
+            <p class="text-sm text-gray-400 mb-4">
+              Created an AI-based Quality Detection System that achieved 92% accuracy in produce freshness classification and 98% accuracy in expiry date recognition.
+            </p>
+            <div class="flex items-center text-cyan-400 text-sm font-mono">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+              </svg>
+              December 2024
+            </div>
+            <div class="mt-4 flex flex-wrap gap-2">
+              <span class="px-2 py-1 bg-neutral-700 rounded-md text-xs text-cyan-400">AI Models</span>
+              <span class="px-2 py-1 bg-neutral-700 rounded-md text-xs text-cyan-400">Neural Networks</span>
+              <span class="px-2 py-1 bg-neutral-700 rounded-md text-xs text-cyan-400">OCR</span>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Achievement 3 -->
+        <div class="bg-neutral-800 rounded-lg overflow-hidden border border-neutral-700 transform transition duration-300 hover:scale-105 hover:shadow-lg hover:shadow-cyan-900/20">
+          <div class="relative h-40 bg-gradient-to-br from-cyan-900/30 to-neutral-800 p-6 flex items-center justify-center">
+            <div class="absolute top-0 left-0 w-full h-full overflow-hidden opacity-10">
+              <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-cyan-400 via-neutral-800 to-neutral-800 opacity-30"></div>
+            </div>
+            <div class="relative">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 text-cyan-400 mx-auto mb-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 10h18M3 14h18m-9-4v8m-7 0h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" />
+              </svg>
+              <div class="absolute -right-2 -top-2 bg-cyan-600 text-white text-xs rounded-full w-8 h-8 flex items-center justify-center font-bold">1st</div>
+            </div>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold text-white mb-2">Spell Bee Competition Winner</h3>
+            <p class="text-sm text-gray-400 mb-4">
+              Secured first place in the Spell Bee competition organized by Toastmasters, demonstrating exceptional vocabulary and spelling skills.
+            </p>
+            <div class="flex items-center text-cyan-400 text-sm font-mono">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+              </svg>
+              2023
+            </div>
+            <div class="mt-4 flex flex-wrap gap-2">
+              <span class="px-2 py-1 bg-neutral-700 rounded-md text-xs text-cyan-400">Language</span>
+              <span class="px-2 py-1 bg-neutral-700 rounded-md text-xs text-cyan-400">Communication</span>
+              <span class="px-2 py-1 bg-neutral-700 rounded-md text-xs text-cyan-400">Vocabulary</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Certifications Section -->
+      <div class="mb-16">
+        <h3 class="text-2xl font-bold text-white mb-8 text-center font-mono">Certifications</h3>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <!-- Certifications Left Column -->
+          <div class="space-y-5">
+            <!-- Certification 1 -->
+            <div class="bg-neutral-800 rounded-lg p-5 border border-neutral-700 hover:border-cyan-500 transition-colors duration-300">
+              <div class="flex items-start">
+                <div class="w-10 h-10 flex-shrink-0 bg-cyan-900/30 rounded-full flex items-center justify-center mr-4">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-cyan-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+                  </svg>
+                </div>
+                <div>
+                  <h4 class="text-white font-medium">Metasploit Guided Project: Ethical Penetration Testing</h4>
+                  <p class="text-gray-400 text-sm mt-1">Hands-on experience with penetration testing tools and methodologies.</p>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Certification 2 -->
+            <div class="bg-neutral-800 rounded-lg p-5 border border-neutral-700 hover:border-cyan-500 transition-colors duration-300">
+              <div class="flex items-start">
+                <div class="w-10 h-10 flex-shrink-0 bg-cyan-900/30 rounded-full flex items-center justify-center mr-4">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-cyan-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                  </svg>
+                </div>
+                <div>
+                  <h4 class="text-white font-medium">TCS iON Career Edge</h4>
+                  <p class="text-gray-400 text-sm mt-1">Comprehensive industry-readiness training by Tata Consultancy Services.</p>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Certification 3 -->
+            <div class="bg-neutral-800 rounded-lg p-5 border border-neutral-700 hover:border-cyan-500 transition-colors duration-300">
+              <div class="flex items-start">
+                <div class="w-10 h-10 flex-shrink-0 bg-cyan-900/30 rounded-full flex items-center justify-center mr-4">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-cyan-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z" />
+                  </svg>
+                </div>
+                <div>
+                  <h4 class="text-white font-medium">The Fundamentals of Linux and Data Analytics</h4>
+                  <p class="text-gray-400 text-sm mt-1">Vodafone Idea Foundation - Essential OS and data skills.</p>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Certification 4 -->
+            <div class="bg-neutral-800 rounded-lg p-5 border border-neutral-700 hover:border-cyan-500 transition-colors duration-300">
+              <div class="flex items-start">
+                <div class="w-10 h-10 flex-shrink-0 bg-cyan-900/30 rounded-full flex items-center justify-center mr-4">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-cyan-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
+                  </svg>
+                </div>
+                <div>
+                  <h4 class="text-white font-medium">Introduction to Web</h4>
+                  <p class="text-gray-400 text-sm mt-1">Vodafone Idea Foundation - Web development fundamentals.</p>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Certification 5 -->
+            <div class="bg-neutral-800 rounded-lg p-5 border border-neutral-700 hover:border-cyan-500 transition-colors duration-300">
+              <div class="flex items-start">
+                <div class="w-10 h-10 flex-shrink-0 bg-cyan-900/30 rounded-full flex items-center justify-center mr-4">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-cyan-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                  </svg>
+                </div>
+                <div>
+                  <h4 class="text-white font-medium">Design and Implementation of Human-Computer Interfaces</h4>
+                  <p class="text-gray-400 text-sm mt-1">Comprehensive training in designing intuitive user interfaces.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Certifications Right Column -->
+          <div class="space-y-5">
+            <!-- Certification 6 -->
+            <div class="bg-neutral-800 rounded-lg p-5 border border-neutral-700 hover:border-cyan-500 transition-colors duration-300">
+              <div class="flex items-start">
+                <div class="w-10 h-10 flex-shrink-0 bg-cyan-900/30 rounded-full flex items-center justify-center mr-4">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-cyan-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                  </svg>
+                </div>
+                <div>
+                  <h4 class="text-white font-medium">Command Line Utilities</h4>
+                  <p class="text-gray-400 text-sm mt-1">Infosys - Advanced command line skills for development.</p>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Certification 7 -->
+            <div class="bg-neutral-800 rounded-lg p-5 border border-neutral-700 hover:border-cyan-500 transition-colors duration-300">
+              <div class="flex items-start">
+                <div class="w-10 h-10 flex-shrink-0 bg-cyan-900/30 rounded-full flex items-center justify-center mr-4">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-cyan-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                  </svg>
+                </div>
+                <div>
+                  <h4 class="text-white font-medium">Introduction to Quantum Computing</h4>
+                  <p class="text-gray-400 text-sm mt-1">LinkedIn - Understanding quantum principles and applications.</p>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Certification 8 -->
+            <div class="bg-neutral-800 rounded-lg p-5 border border-neutral-700 hover:border-cyan-500 transition-colors duration-300">
+              <div class="flex items-start">
+                <div class="w-10 h-10 flex-shrink-0 bg-cyan-900/30 rounded-full flex items-center justify-center mr-4">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-cyan-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
+                  </svg>
+                </div>
+                <div>
+                  <h4 class="text-white font-medium">C++ Essential Training</h4>
+                  <p class="text-gray-400 text-sm mt-1">LinkedIn - Mastering C++ programming concepts.</p>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Certification 9 -->
+            <div class="bg-neutral-800 rounded-lg p-5 border border-neutral-700 hover:border-cyan-500 transition-colors duration-300">
+              <div class="flex items-start">
+                <div class="w-10 h-10 flex-shrink-0 bg-cyan-900/30 rounded-full flex items-center justify-center mr-4">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-cyan-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
+                  </svg>
+                </div>
+                <div>
+                  <h4 class="text-white font-medium">Arm India Designing and Modelling of IoT, AI & ML Systems</h4>
+                  <p class="text-gray-400 text-sm mt-1">STMicroelectronics - IoT and AI systems engineering.</p>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Certification 10 -->
+            <div class="bg-neutral-800 rounded-lg p-5 border border-neutral-700 hover:border-cyan-500 transition-colors duration-300">
+              <div class="flex items-start">
+                <div class="w-10 h-10 flex-shrink-0 bg-cyan-900/30 rounded-full flex items-center justify-center mr-4">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-cyan-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+                  </svg>
+                </div>
+                <div>
+                  <h4 class="text-white font-medium">Introduction to Cybersecurity and Cyber Forensics</h4>
+                  <p class="text-gray-400 text-sm mt-1">TryHackMe - Security foundations and forensic techniques.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Other Achievements -->
+      <div>
+        <h3 class="text-2xl font-bold text-white mb-8 text-center font-mono">Extracurricular Activities</h3>
+        
+        <div class="bg-neutral-800 rounded-lg border border-neutral-700 overflow-hidden">
+          <!-- Memberships -->
+          <div class="p-6 border-b border-neutral-700">
+            <h4 class="text-xl font-bold text-white mb-4 flex items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 text-cyan-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+              </svg>
+              Memberships & Initiatives
+            </h4>
+            <div class="space-y-4">
+              <div class="flex items-start">
+                <div class="w-2 h-2 bg-cyan-400 rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                <div>
+                  <p class="text-white">Core team member of Saurvi – an Entrepreneurship Cell initiative</p>
+                  <p class="text-gray-400 text-sm mt-1">Educated and trained women about business skills through boot camps, quizzes, and workshops.</p>
+                </div>
+              </div>
+              <div class="flex items-start">
+                <div class="w-2 h-2 bg-cyan-400 rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                <div>
+                  <p class="text-white">Associate at NextTechLab</p>
+                  <p class="text-gray-400 text-sm mt-1">Student-run innovation-driven lab with 5 specialized sub-labs based on interests. Active in hackathons, workshops, and coding competitions.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Academic Accomplishments -->
+          <div class="p-6 border-b border-neutral-700 bg-neutral-900/30">
+            <h4 class="text-xl font-bold text-white mb-4 flex items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 text-cyan-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path d="M12 14l9-5-9-5-9 5 9 5z" />
+                <path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z" />
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222" />
+              </svg>
+              Academic Accomplishments
+            </h4>
+            <div class="space-y-4">
+              <div class="flex items-start">
+                <div class="w-2 h-2 bg-cyan-400 rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                <div>
+                  <p class="text-white">Winner of the Inter-House Painting competition by SRMAP Creative Arts Club</p>
+                </div>
+              </div>
+              <div class="flex items-start">
+                <div class="w-2 h-2 bg-cyan-400 rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                <div>
+                  <p class="text-white">Winner of the Spell Bee competition organized by ACTS as a part of Infinitus</p>
+                </div>
+              </div>
+              <div class="flex items-start">
+                <div class="w-2 h-2 bg-cyan-400 rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                <div>
+                  <p class="text-white">Multiple medals for Mathematics, Science and English Olympiads at the school level</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+</element><element id="b8c9ca51-95a7-4680-8a4a-dea82d785236" data-section-id="b8c9ca51-95a7-4680-8a4a-dea82d785236">
+
+
+<div id="root">
+  <section id="education" class="py-20 bg-neutral-800">
+    <div class="container mx-auto px-4">
+      <!-- Section Header -->
+      <div class="mb-12 text-center">
+        <h2 class="text-3xl md:text-4xl font-bold text-white mb-2 font-mono">
+          <span class="text-cyan-400">&lt;</span> Education <span class="text-cyan-400">/&gt;</span>
+        </h2>
+        <div class="w-20 h-1 bg-cyan-400 mx-auto"></div>
+        <p class="text-gray-400 mt-4 max-w-2xl mx-auto">A strong academic foundation with a focus on computer science and mathematics.</p>
+      </div>
+      
+      <!-- Main Education Card -->
+      <div class="bg-neutral-900 rounded-lg shadow-xl overflow-hidden border border-neutral-700 mb-12 hover:shadow-cyan-900/20 transition-shadow duration-300">
+        <div class="md:flex">
+          <!-- University Logo/Image Section -->
+          <div class="md:w-1/3 bg-gradient-to-br from-neutral-800 to-neutral-900 p-8 flex flex-col justify-center items-center border-b md:border-b-0 md:border-r border-neutral-700">
+            <div class="w-24 h-24 bg-neutral-800 rounded-full flex items-center justify-center mb-4 border border-neutral-700">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-cyan-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path d="M12 14l9-5-9-5-9 5 9 5z" />
+                <path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z" />
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222" />
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold text-white text-center mb-1">SRM UNIVERSITY, AP</h3>
+            <div class="text-cyan-400 text-sm font-mono text-center mb-4">2020 - 2024</div>
+            
+            <div class="w-full max-w-xs">
+              <div class="relative pt-1">
+                <div class="flex mb-2 items-center justify-between">
+                  <div>
+                    <span class="text-xs font-semibold inline-block text-cyan-400">GPA</span>
+                  </div>
+                  <div>
+                    <span class="text-xs font-semibold inline-block text-cyan-400">9.00/10.00</span>
+                  </div>
+                </div>
+                <div class="overflow-hidden h-2 mb-4 text-xs flex rounded bg-neutral-700">
+                  <div style="width: 90%" class="shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-cyan-500"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Education Details -->
+          <div class="md:w-2/3 p-8">
+            <div class="flex flex-col h-full">
+              <div>
+                <h4 class="text-2xl font-bold text-white mb-3">Bachelor of Technology</h4>
+                <div class="flex flex-wrap gap-3 mb-6">
+                  <span class="bg-cyan-900/30 text-cyan-400 px-3 py-1 rounded-full text-sm">Computer Science and Engineering</span>
+                  <span class="bg-cyan-900/30 text-cyan-400 px-3 py-1 rounded-full text-sm">Minor in Mathematics</span>
+                </div>
+              </div>
+              
+              <div class="space-y-4 text-gray-300 mb-6 flex-grow">
+                <p>
+                  Completed a comprehensive curriculum focused on computer science fundamentals, advanced programming, algorithms, data structures, and artificial intelligence.
+                </p>
+                <p>
+                  Supplemented core CS education with a minor in Mathematics, developing strong analytical skills and a deep understanding of mathematical concepts applied to computing.
+                </p>
+              </div>
+              
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-4 pt-4 border-t border-neutral-700">
+                <div>
+                  <h5 class="font-medium text-white mb-2">Key Areas of Study</h5>
+                  <ul class="space-y-1 text-gray-400 text-sm">
+                    <li class="flex items-center">
+                      <div class="w-1.5 h-1.5 bg-cyan-400 rounded-full mr-2"></div>
+                      <span>Artificial Intelligence</span>
+                    </li>
+                    <li class="flex items-center">
+                      <div class="w-1.5 h-1.5 bg-cyan-400 rounded-full mr-2"></div>
+                      <span>Machine Learning</span>
+                    </li>
+                    <li class="flex items-center">
+                      <div class="w-1.5 h-1.5 bg-cyan-400 rounded-full mr-2"></div>
+                      <span>Data Structures & Algorithms</span>
+                    </li>
+                    <li class="flex items-center">
+                      <div class="w-1.5 h-1.5 bg-cyan-400 rounded-full mr-2"></div>
+                      <span>Applied Mathematics</span>
+                    </li>
+                  </ul>
+                </div>
+                <div>
+                  <h5 class="font-medium text-white mb-2">Notable Coursework</h5>
+                  <ul class="space-y-1 text-gray-400 text-sm">
+                    <li class="flex items-center">
+                      <div class="w-1.5 h-1.5 bg-cyan-400 rounded-full mr-2"></div>
+                      <span>Neural Networks & Deep Learning</span>
+                    </li>
+                    <li class="flex items-center">
+                      <div class="w-1.5 h-1.5 bg-cyan-400 rounded-full mr-2"></div>
+                      <span>Computer Vision</span>
+                    </li>
+                    <li class="flex items-center">
+                      <div class="w-1.5 h-1.5 bg-cyan-400 rounded-full mr-2"></div>
+                      <span>Database Management Systems</span>
+                    </li>
+                    <li class="flex items-center">
+                      <div class="w-1.5 h-1.5 bg-cyan-400 rounded-full mr-2"></div>
+                      <span>Software Engineering</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- High School Education Timeline -->
+      <div class="relative mb-12">
+        <div class="absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-neutral-700"></div>
+        
+        <!-- Class 12 -->
+        <div class="relative z-10 mb-12">
+          <div class="flex items-center flex-col md:flex-row">
+            <!-- Timeline Marker -->
+            <div class="order-1 md:w-5/12"></div>
+            
+            <div class="z-10 flex items-center order-1 bg-cyan-900 shadow-xl w-8 h-8 rounded-full mb-4 md:mb-0">
+              <div class="mx-auto font-semibold text-lg text-white">12</div>
+            </div>
+            
+            <!-- Content -->
+            <div class="order-1 bg-neutral-900 rounded-lg border border-neutral-700 shadow-lg w-full md:w-5/12 px-6 py-5 ml-0 md:ml-10">
+              <h3 class="text-lg font-bold text-white mb-2">Class 12th - Higher Secondary</h3>
+              <div class="text-cyan-400 text-sm font-mono mb-3">Puna International School, Ahmedabad</div>
+              <div class="flex items-center mb-2">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-cyan-400 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+                <span class="text-gray-300">CBSE Board - 88%</span>
+              </div>
+              <div class="flex items-center mb-3">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-cyan-400 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                </svg>
+                <span class="text-gray-300">Gujarat, India</span>
+              </div>
+              <div class="text-gray-400 text-sm">
+                Focused on Physics, Chemistry, Mathematics and Computer Science with strong performance in quantitative subjects.
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Class 10 -->
+        <div class="relative z-10">
+          <div class="flex items-center flex-col md:flex-row">
+            <!-- Content -->
+            <div class="order-1 bg-neutral-900 rounded-lg border border-neutral-700 shadow-lg w-full md:w-5/12 px-6 py-5 md:mr-10">
+              <h3 class="text-lg font-bold text-white mb-2">Class 10th - Secondary School</h3>
+              <div class="text-cyan-400 text-sm font-mono mb-3">Hillwoods School, Gandhinagar</div>
+              <div class="flex items-center mb-2">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-cyan-400 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+                <span class="text-gray-300">CBSE Board - 95%</span>
+              </div>
+              <div class="flex items-center mb-3">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-cyan-400 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                </svg>
+                <span class="text-gray-300">Gujarat, India</span>
+              </div>
+              <div class="text-gray-400 text-sm">
+                Achieved excellence across all subjects with particular strength in Mathematics and Science, establishing a strong foundation for further studies.
+              </div>
+            </div>
+            
+            <!-- Timeline Marker -->
+            <div class="z-10 flex items-center order-1 bg-cyan-900 shadow-xl w-8 h-8 rounded-full mb-4 md:mb-0">
+              <div class="mx-auto font-semibold text-lg text-white">10</div>
+            </div>
+            
+            <div class="order-1 md:w-5/12"></div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Additional Qualifications -->
+      <div class="bg-neutral-900 rounded-lg shadow-lg overflow-hidden border border-neutral-700">
+        <div class="px-6 py-5 border-b border-neutral-700 bg-neutral-800/50">
+          <h3 class="text-xl font-bold text-white">Additional Qualifications</h3>
+        </div>
+        
+        <div class="p-6">
+          <!-- IELTS -->
+          <div class="mb-8">
+            <div class="flex items-center mb-4">
+              <div class="w-10 h-10 flex-shrink-0 bg-cyan-900/30 rounded-full flex items-center justify-center mr-4">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-cyan-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129" />
+                </svg>
+              </div>
+              <div>
+                <h4 class="text-lg font-bold text-white">IELTS Score: 8.0 Bands</h4>
+                <p class="text-gray-400 text-sm">International English Language Testing System</p>
+              </div>
+            </div>
+            
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-4">
+              <div class="bg-neutral-800 p-4 rounded-lg text-center">
+                <div class="text-2xl font-bold text-cyan-400 mb-1">9.0</div>
+                <div class="text-gray-400 text-sm">Listening</div>
+              </div>
+              <div class="bg-neutral-800 p-4 rounded-lg text-center">
+                <div class="text-2xl font-bold text-cyan-400 mb-1">7.0</div>
+                <div class="text-gray-400 text-sm">Reading</div>
+              </div>
+              <div class="bg-neutral-800 p-4 rounded-lg text-center">
+                <div class="text-2xl font-bold text-cyan-400 mb-1">7.5</div>
+                <div class="text-gray-400 text-sm">Writing</div>
+              </div>
+              <div class="bg-neutral-800 p-4 rounded-lg text-center">
+                <div class="text-2xl font-bold text-cyan-400 mb-1">7.5</div>
+                <div class="text-gray-400 text-sm">Speaking</div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Skills & Competencies -->
+          <div>
+            <h4 class="text-lg font-bold text-white mb-4 flex items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 text-cyan-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+              </svg>
+              Academic Skills & Competencies
+            </h4>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div class="bg-neutral-800/50 p-4 rounded-lg">
+                <h5 class="font-medium text-white mb-2">Technical Writing</h5>
+                <p class="text-gray-400 text-sm">
+                  Proficient in creating detailed technical documentation, research papers, and reports with clear explanations of complex concepts.
+                </p>
+              </div>
+              
+              <div class="bg-neutral-800/50 p-4 rounded-lg">
+                <h5 class="font-medium text-white mb-2">Mathematical Modeling</h5>
+                <p class="text-gray-400 text-sm">
+                  Strong ability to develop mathematical models for complex systems and translate theoretical concepts into practical applications.
+                </p>
+              </div>
+              
+              <div class="bg-neutral-800/50 p-4 rounded-lg">
+                <h5 class="font-medium text-white mb-2">Research Methodology</h5>
+                <p class="text-gray-400 text-sm">
+                  Experienced in designing research studies, collecting and analyzing data, and drawing meaningful conclusions.
+                </p>
+              </div>
+              
+              <div class="bg-neutral-800/50 p-4 rounded-lg">
+                <h5 class="font-medium text-white mb-2">Critical Thinking</h5>
+                <p class="text-gray-400 text-sm">
+                  Adept at analyzing problems from multiple perspectives, evaluating evidence, and developing innovative solutions.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+</element><element id="5c90b1f5-6843-435d-b06f-b17a55ef8e5c" data-section-id="5c90b1f5-6843-435d-b06f-b17a55ef8e5c">
+
+
+<div id="root">
+  <footer id="footer" class="bg-neutral-900 border-t border-neutral-800">
+    <div class="container mx-auto px-4 py-12">
+      <!-- Top Section -->
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+        <!-- Personal Info -->
+        <div>
+          <div class="text-2xl font-bold text-white font-mono mb-4">
+            <span class="text-white">&lt;</span>
+            <span class="text-cyan-400">SN</span>
+            <span class="text-white">/&gt;</span>
+          </div>
+          <p class="text-gray-400 mb-4">AI and Software Engineer with expertise in machine learning, computer vision, and innovative technology solutions.</p>
+          <div class="flex space-x-3">
+            <!-- LinkedIn -->
+            <a href="https://www.linkedin.com/in/shivangi-narayan-srmap/" aria-label="LinkedIn" class="text-gray-400 hover:text-cyan-400 transition-colors duration-300">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+              </svg>
+            </a>
+            <!-- GitHub -->
+            <a href="https://github.com/shivangiphilic" aria-label="GitHub" class="text-gray-400 hover:text-cyan-400 transition-colors duration-300">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd"></path>
+              </svg>
+            </a>
+            <!-- Email -->
+            <a href="mailto:shivangi_narayan@srmap.edu.in" aria-label="Email" class="text-gray-400 hover:text-cyan-400 transition-colors duration-300">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Divider -->
+      <div class="border-t border-neutral-800 mb-8"></div>
+      
+      <!-- Bottom Section -->
+      <div class="flex flex-col md:flex-row justify-between items-center">
+        <!-- Copyright -->
+        <div class="text-gray-500 text-sm mb-4 md:mb-0">
+          &copy; 2024 Shivangi Narayan. All rights reserved.
+        </div>
+      </div>
+      
+      <!-- Back to top button -->
+      <div class="flex justify-center mt-8">
+        <a href="#hero" class="bg-neutral-800 hover:bg-neutral-700 text-gray-300 hover:text-white transition-colors duration-300 p-2 rounded-full">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7" />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+</div>
+
+</element></div>
+      </main>
+
+      
+   </body>
+</html>
